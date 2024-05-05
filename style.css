@@ -1,0 +1,712 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s all;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* config */
+
+::selection {
+    background-color: #000;
+    color: #fffbd1;
+}
+
+body {
+    background-color: #0c0c0c;
+    overflow: auto;
+}
+
+:where(li, a) {
+    text-decoration: none;
+    list-style: none;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+nav {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.876);
+    backdrop-filter: blur(50px);
+    z-index: 1;
+    position: fixed;
+}
+
+.navbar {
+    height: 58px;
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo h1 {
+    color: #fffbd1;
+    font-family: Segoe Ui Variable;
+    font-size: 24px;
+    letter-spacing: -0.5px;
+    -webkit-text-stroke-width: 0.5px;
+}
+
+.navbar-logo ion-icon {
+    margin-right: 0.5rem;
+    transform: translateY(1px);
+}
+
+.toggle li {
+    margin-bottom: 0.5rem;
+}
+
+.toggle li a {
+    color: #f0ebb8;
+    font-size: 18px;
+    font-weight: 300;
+    -webkit-text-stroke-width: 0.5px;
+    font-family: Segoe Ui Variable;
+}
+
+.toggle li a ion-icon {
+    margin-right: 1rem;
+    color: #f0ebb8;
+    font-size: 24px;
+    transform: translateY(5px);
+}
+
+.toggle {
+    display: none;
+    margin: 1.5rem;
+}
+
+.toggle h1 {
+    font-size: 24px;
+    font-weight: 400;
+    -webkit-text-stroke-width: 0.5px;
+    color: #fffbd1;
+    margin-bottom: 1.5rem;
+    font-family: Segoe Ui Variable;
+}
+
+.toggle h1 ion-icon {
+    font-size: 26px;
+    margin-right: 0.5rem;
+    transform: translateY(2px);
+}
+
+#myBtn {
+    background-color: transparent;
+    border: none;
+    transition: all 0.2s;
+    color: #fffbd1;
+    font-size: 24px;
+}
+
+button:hover {
+    filter: brightness(80%);
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.92)
+}
+
+/* #myBtn ion-icon {
+    color: #fffbd1;
+    display: flex;
+} */
+
+.sidebar {
+    background-color: rgba(4, 4, 4, 0.746);
+    backdrop-filter: blur(100px);
+    width: 225px;
+    height: 100vh;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    /* right: 0;  for who want to get sidebar to right side*/
+}
+
+.buttonnav {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.876);
+    backdrop-filter: blur(50px);
+    width: 100%;
+    height: 65px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.buttomNavContent {
+    display: flex;
+    margin: 0 auto;
+    width: 250px;
+    justify-content: space-between;
+}
+
+.buttomNavContent li a {
+    color: #fffbd1;
+    font-size: 28px;
+    transform: translateY(3px);
+    display: inline-block;
+}
+
+header {
+    position: relative;
+}
+
+.headernav {
+    display: flex;
+    position: relative;
+    background-color: #fffbd1;
+    height: 60px;
+}
+
+.headernav-con {
+    display: flex;
+    width: 300px;
+    margin: 0 auto;   
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headernav-text {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.headernav-text h1 {
+    font-family: segoe ui variable;
+    font-size: 24px;
+    transform: translateX(-25px);
+    -webkit-text-stroke-width: 1px;
+}
+
+.headernav-text img {
+    width: 40px;
+    transform: translate(-15px, 2px);
+}
+
+.Headernav-text-logo-href-links-on-secound-navbar-before-mainNavbar-begin li a {
+    color: #fff;
+    background-color: #000;
+    padding: 0.5rem 1.5rem;
+    font-weight: 300;
+    border-radius: 3px;
+    -webkit-text-stroke-width: 0.6px;
+    font-family: Segoe Ui Variable;
+}
+
+.Headernav-text-logo-href-links-on-secound-navbar-before-mainNavbar-begin li a ion-icon {
+    font-size: 22px;
+    left: 0;
+    transform: translate(-8px,3px);
+}
+
+.header-content {
+    background: rgb(255, 251, 209);
+    backdrop-filter: blur(20px);
+    height: 400px;
+}
+
+.header-lines-text {
+    border-left: solid 6px #040404;
+    padding-left: 1.5rem;
+    padding-bottom: 4.5rem;
+    position: absolute;
+    transform: translateY(-20px);
+}
+
+.header-lines-text li a ion-icon {
+    font-size: 26px;
+    position: absolute;
+    left: 185px;
+    background-color: #000;
+    color: #fff;
+    padding: 0.48rem 0.5rem;
+    transform: translateY(-10px);
+    border-radius: 4px;
+}
+
+.header-text {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    width: 300px;
+    margin: 0 auto;
+    display: grid;
+}
+
+.header-text h1 {
+    font-size: 22px;
+    font-family: Segoe Ui Variable;
+    -webkit-text-stroke-width: 1px;
+    line-height: 1.2;
+}
+
+
+.header-text ion-icon {
+    font-size: 100px;
+    margin-bottom: 1rem;
+}
+
+.header-text li a {
+    display: inline-block;
+    margin-top: 2rem;
+    color: #fff;
+    background-color: #040404;
+    padding: 0.6rem 1rem;
+    font-weight: 300;
+    -webkit-text-stroke-width: 0.6px;
+    font-family: Segoe Ui Variable;
+    border-radius: 3px;
+}
+
+.container {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.text-sugess {
+    padding-top: 1.5rem;
+    padding-bottom: 0.6rem;
+    backdrop-filter: blur(3px);
+}
+
+.text-sugess h1 {
+    color: #fffbd1;
+    font-family: madimione;
+    font-size: 26px;
+    letter-spacing: -0.3px;
+}
+
+.text-sugess ion-icon {
+    font-size: 30px;
+    margin-right: 0.8rem;
+    transform: translateY(5px);
+}
+
+.text-sugess p {
+    color: #fff;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    -webkit-text-stroke-width: 0.5px;
+    font-family: Segoe Ui Variable;
+    font-size: 14px;
+}
+
+.Slider {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    border-radius: 4px;
+    margin-bottom: 4rem;
+}
+
+.blue {
+    background-color: #fffbd1;
+    height: 100%;
+    aspect-ratio: 16 / 10;
+}
+
+.green {
+    background-color: #f0ebb8;
+    height: 100%;
+    aspect-ratio: 16 / 10;
+}
+
+.blue,
+.green {
+    display: inline-block;
+    margin-right: 25px;
+    scroll-snap-align: center;
+}
+
+.signin-text-border h1 {
+    color: #000;
+    font-weight: 400;
+    font-family: Segoe Ui Variable;
+    line-height: 1.1;
+    -webkit-text-stroke-width: 1.6px;
+    font-size: 30px;
+}
+
+.signin-text-border ion-icon {
+    color: #000000;
+    font-size: 100px;
+    margin-bottom: 1.5rem;
+}
+
+.SignIn {
+    background: rgb(255, 251, 209);
+    backdrop-filter: blur(20px);
+    height: 400px;
+    position: relative;
+    z-index: -1;
+}
+
+.signin-content {
+    width: 300px;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15%;
+}
+
+.sign-text {
+    border-right: solid 6px #000;
+    padding-bottom: 3.7rem;
+}
+
+.signin-text-border {
+    width: 270px;
+}
+
+.Flex-link-btn {
+    display: flex;
+    gap: 13px;
+    margin-top: 1.5rem;
+}
+
+.Flex-link-btn li a {
+    color: #fff;
+    background-color: #000;
+    font-family: Segoe Ui Variable;
+    padding: 0.5rem 1rem;
+    width: 120px;
+    text-align: center;
+    display: inline-block;
+    font-weight: 300;
+    border-radius: 4px;
+    -webkit-text-stroke-width: 0.8px;
+}
+
+.Flex-link-btn li a ion-icon {
+    font-size: 18px;
+    transform: translateY(2px);
+    color: #fff;
+    position: absolute;
+    left: 142px;
+}
+
+
+.TxTarea {
+    max-width: 300px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.PeakkPro {
+    background: rgb(255, 251, 209);
+    backdrop-filter: blur(20px);
+    height: 400px;
+    margin-bottom: 5rem;
+}
+
+.product {
+    max-width: 300px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.pro-text h1 {
+    font-family: segoe ui variable;
+    font-weight: 500;
+    -webkit-text-stroke-width: 0.7px;
+}
+
+.pro-text ion-icon {
+    font-size: 100px;
+    margin-bottom: 1.3rem;
+    margin-top: 2rem;
+}
+
+.pro-text hr {
+    border: solid 2px #000;
+    margin: 0.5rem 0px;
+    width: 50%;
+}
+
+.pro-text p {
+    font-family: segoe ui variable;
+    font-weight: 300;
+    -webkit-text-stroke-width: 1px;
+    width: 65%;
+    margin: 1rem 0px;
+}
+
+.product-link {
+    display: flex;
+    gap: 15PX;
+    margin-top: 2rem;
+}
+
+.product-link a {
+    font-family: segoe ui variable;
+    font-weight: 300;
+    -webkit-text-stroke-width: 1px;
+    color: #fff;
+    padding: 0.5rem 1.2rem;
+    background-color: #000;
+    position: relative;
+    border-radius: 4px;
+}
+
+.product-link a img {
+    width: 36.67px;
+    height: 36.5px;
+    transform: translateY(-8px);
+    left: 120px;
+    position: absolute;
+    border-radius: 4px;
+}
+
+/* button google */
+
+.css-only-ripple::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    aspect-ratio: 1 / 1;
+    transform: translate(-50%, -50%) scale(0);
+    pointer-events: none;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, .5);
+}
+
+.css-only-ripple:focus::after {
+    animation: scale_up 1000ms forwards;
+}
+
+button:hover {
+    filter: brightness(80%);
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.92)
+}
+
+a:hover {
+    filter: brightness(80%);
+    cursor: pointer;
+}
+
+a:active {
+    filter: blur(2px);
+    transform: scale(0.92);
+}
+
+.BackgroundBlur {
+    position: fixed;
+    z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+    backdrop-filter: blur(25px);
+    width: 0px;
+    height: 100vh;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.7s all;
+    background-color: rgba(0, 0, 0, 0.668);
+}
+
+/* motion bg */
+
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -2;
+}
+
+.circles li {
+    position: fixed;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border: solid 2px #fffbd1;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+
+}
+
+.circles li:nth-child(1) {
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .Background-Alert {
+        display: none;
+    }
+}
+
+/* Secure Open only mobile device */
+
+.Background-Alert {
+    position: fixed;
+    z-index: 999;
+    background-color: rgb(255, 251, 209);
+    width: 100%;
+    height: 100vh;
+}
+
+.alertElement {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.Alert {
+    background-color: #000;
+    width: 400px;
+    height: 300px;
+    padding: 1.5rem 2rem;
+    border-radius: 6px;
+    position: relative;
+}
+
+.Alert-text h1 {
+    color: #fffbd1;
+    font-size: 24px;
+    font-family: Segoe ui variable;
+    font-weight: 400;
+    -webkit-text-stroke-width: 0.5px;
+    margin-bottom: 1.5rem;
+}
+
+.Alert-text p {
+    font-family: Segoe ui variable;
+    font-weight: 300;
+    -webkit-text-stroke-width: 1px;
+    width: 320px;
+    color: #fff;
+
+}
+
+.Alert-links {
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    display: flex;
+    gap: 30px;
+}
+
+.Alert-links a {
+    color: #fffbd1;
+    font-family: madimione;
+}
+
+.Alert-links ion-icon {
+    margin-right: 0.5rem;
+    transform: translateY(2px);
+}
