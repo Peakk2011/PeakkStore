@@ -135,7 +135,7 @@ button:active {
     background-color: rgba(0, 0, 0, 0.876);
     backdrop-filter: blur(50px);
     width: 100%;
-    height: 65px;
+    height: 58px;
     bottom: 0;
     display: flex;
     align-items: center;
@@ -145,16 +145,180 @@ button:active {
 .buttomNavContent {
     display: flex;
     margin: 0 auto;
-    width: 250px;
+    width: 280px;
     justify-content: space-between;
 }
 
 .buttomNavContent li a {
     color: #fffbd1;
-    font-size: 28px;
+    font-size: 26px;
     transform: translateY(3px);
     display: inline-block;
 }
+
+/* language */
+
+.language {
+    position: fixed;
+    height: 160px;
+    background-color: rgba(0, 0, 0, 0.876);
+    backdrop-filter: blur(50px);
+    /* bottom: 58px; */
+    bottom: -160px;
+    opacity: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.lang {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.lang-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.lang-text a {
+    color: #fffbd1;
+    font-size: 32px;
+}
+
+.lang-text h1 {
+    color: #fffbd1;
+    font-family: segoe ui variable;
+    font-weight: 400;
+    -webkit-text-stroke-width: 1px;
+    font-size: 24px;
+    display: flex;
+}
+
+.lang-text h1 ion-icon {
+    font-size: 30px;
+    margin-right: 0.5rem;
+    transform: translateY(3px);
+}
+
+.lang-link {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.lang-link a ion-icon {
+    transform: translateY(2px);
+    margin-left: 0.5rem;
+}
+
+.lang-link a {
+    width: 130px;
+    text-align: center;
+    border-radius: 2px;
+    color: #000;
+    background-color: #fffbd1;
+    padding: 0.5rem 1rem;
+    margin-top: 2rem;
+    display: inline-block;
+    font-family: segoe ui variable;
+    -webkit-text-stroke-width: 1.2px;
+    font-weight: 300;
+}
+
+/* search box */
+
+.Search {
+    position: fixed;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.876);
+    backdrop-filter: blur(50px);
+    width: 100%;
+    top: -140px;
+}
+
+.search-content {
+    max-width: 300px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.search-content h1 {
+    margin-bottom: 1.5rem;
+    margin-top: 1.2rem;
+    left: 50%;
+    color: #fffbd1;
+    font-family: Segoe ui variable;
+    font-weight: 400;
+    -webkit-text-stroke-width: 1px;
+    font-size: 22px;
+}
+
+.search-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-text h1 ion-icon {
+    font-size: 26px;
+    transform: translateY(5px);
+    margin-right: 0.5rem;
+}
+
+.search-text a {
+    font-size: 32px;
+    color: #fffbd1;
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    margin: 0 auto;
+    border: none;
+    border-right: none;
+    padding: 5px;
+    height: 36px;
+    /* border-radius: 2px 0 0 2px; */
+    outline: none;
+    color: #fffbd1;
+    background-color: #000;
+    border: solid 1px #fffbd1;
+    padding-left: 1rem;
+  }
+
+  .searchTerm::placeholder {
+    color: #fff;
+    font-family: Segoe ui variable;
+    font-weight: 300;
+    -webkit-text-stroke-width: 0.6px;
+  }
+  
+  .searchTerm:focus{
+    color: #fffbd1;
+  }
+  
+  .searchButton {
+    width: 50px;
+    height: 36px;
+    border: 1px solid #fffbd1;
+    background: #fffbd1;
+    text-align: center;
+    color: #000;
+    /* border-radius: 0 2px 2px 0; */
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  
 
 header {
     position: relative;
@@ -413,7 +577,6 @@ header {
     background: rgb(255, 251, 209);
     backdrop-filter: blur(20px);
     height: 400px;
-    margin-bottom: 5rem;
 }
 
 .product {
@@ -473,6 +636,25 @@ header {
     position: absolute;
     border-radius: 4px;
 }
+
+div.scrollmenu {
+    background-color: #fffbd1;
+    overflow: auto;
+    white-space: nowrap;
+    margin-bottom: 4rem;
+  }
+  
+  div.scrollmenu a {
+    display: inline-block;
+    color: #000;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-family: Segoe ui variable;
+    font-weight: 300;
+    font-size: 18px;
+    -webkit-text-stroke-width: 1.2px;
+  }
 
 /* button google */
 
