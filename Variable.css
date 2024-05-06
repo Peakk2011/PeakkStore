@@ -1,0 +1,106 @@
+:root,
+[data-selected-theme="green"] {
+  --color-background: #0c0c0c;
+  --color-text: #fffbd1;
+  --color-accent: #000;
+}
+
+[data-selected-theme="blue"] {
+  --color-background: #55dde0;
+  --color-text: #2B4150;
+  --color-accent: #00D4E7;
+}
+
+[data-selected-theme="pink"] {
+  --color-background: #DFB2F4;
+  --color-text: #463546;
+  --color-accent: #F06EFC;
+}
+
+[data-selected-theme="orange"] {
+  --color-background: #FA7D61;
+  --color-text: #1E1E24;
+  --color-accent: #F3601C;
+}
+
+/* Theme Swap */
+
+.ThemeElement {
+    position: fixed;
+    bottom: 58px;
+    background-color: rgba(0, 0, 0, 0.876);
+    backdrop-filter: blur(50px);
+    width: 100%;
+    z-index: 2;
+}
+
+.ThemeTextElementSpc {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.ThemeTextElementSpc h1 {
+    color: var(--color-text);
+    font-family: madimione;
+    font-size: 26px;
+    margin-top: 1.4rem;
+    margin-bottom: 0.7rem;
+}
+
+.ThemeTextElementSpc p {
+    color: #fff;   
+    font-family: Segoe Ui Variable;
+    font-weight: 300;
+    -webkit-text-stroke-width: 0.4px;
+    font-size: 14px;
+}
+
+.ThemeTextElementSpc h1 ion-icon {
+    transform: translateY(3px);
+    margin-right: 0.8rem;
+}
+
+.theme-switcher {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    margin: 2.2rem auto;
+  }
+  
+  button[data-theme] {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    padding: 0.6rem 0rem;
+    width: 75px;
+    color: var(--color-text);
+    border: 1px solid var(--color-text);
+    font-family: Segoe ui variable;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    -webkit-text-stroke-width: 1.3px;
+    font-size: 16px;
+  }
+  
+  button[data-theme] + button[data-theme] {
+    border-left: none;
+  }
+  
+  button[data-theme]:first-of-type {
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+  }
+  
+  button[data-theme]:last-of-type {
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  }
+  
+  button[data-theme][aria-pressed="true"] {
+    background-color: var(--color-text);
+    color: var(--color-background);
+  }
+  
+  button[data-theme]:is(:hover, :focus) {
+    box-shadow: 0 0 0 2px var(--color-text) inset;
+  }

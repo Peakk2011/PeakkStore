@@ -16,7 +16,10 @@
 
 body {
     background-color: #0c0c0c;
-    overflow: auto;
+    overflow: hidden;
+    background-color: var(--color-background);
+    background: --color-background;
+    background-size: 200%;
 }
 
 :where(li, a) {
@@ -518,7 +521,6 @@ header {
     backdrop-filter: blur(20px);
     height: 400px;
     position: relative;
-    z-index: -1;
 }
 
 .signin-content {
@@ -543,6 +545,7 @@ header {
     display: flex;
     gap: 13px;
     margin-top: 1.5rem;
+    z-index: 10;
 }
 
 .Flex-link-btn li a {
@@ -632,29 +635,12 @@ header {
     width: 36.67px;
     height: 36.5px;
     transform: translateY(-8px);
-    left: 120px;
+    left: 145px;
     position: absolute;
     border-radius: 4px;
 }
 
-div.scrollmenu {
-    background-color: #fffbd1;
-    overflow: auto;
-    white-space: nowrap;
-    margin-bottom: 4rem;
-  }
-  
-  div.scrollmenu a {
-    display: inline-block;
-    color: #000;
-    text-align: center;
-    padding: 15px 15px;
-    text-decoration: none;
-    font-family: Segoe ui variable;
-    font-weight: 300;
-    font-size: 18px;
-    -webkit-text-stroke-width: 1.2px;
-  }
+
 
 /* button google */
 
@@ -872,7 +858,6 @@ a:active {
     -webkit-text-stroke-width: 1px;
     width: 320px;
     color: #fff;
-
 }
 
 .Alert-links {
@@ -892,3 +877,18 @@ a:active {
     margin-right: 0.5rem;
     transform: translateY(2px);
 }
+
+/* REVEAL SCROLL ON ELEMENT */
+
+.reveal{
+    position: relative;
+    transform: translateY(-60px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
