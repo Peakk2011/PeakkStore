@@ -33,7 +33,7 @@ h1 {
 
 nav {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.876);
+    background-color: var(--NavbarColor);
     backdrop-filter: blur(50px);
     z-index: 1;
     position: fixed;
@@ -49,7 +49,7 @@ nav {
 }
 
 .navbar-logo h1 {
-    color: #fffbd1;
+    color: var(--SecColor);
     font-family: Segoe Ui Variable;
     font-size: 24px;
     letter-spacing: -0.5px;
@@ -66,7 +66,7 @@ nav {
 }
 
 .toggle li a {
-    color: #f0ebb8;
+    color: var(--SecColor);
     font-size: 18px;
     font-weight: 300;
     -webkit-text-stroke-width: 0.5px;
@@ -75,7 +75,7 @@ nav {
 
 .toggle li a ion-icon {
     margin-right: 1rem;
-    color: #f0ebb8;
+    color: var(--SecColor);
     font-size: 24px;
     transform: translateY(5px);
 }
@@ -89,7 +89,7 @@ nav {
     font-size: 24px;
     font-weight: 400;
     -webkit-text-stroke-width: 0.5px;
-    color: #fffbd1;
+    color: var(--SecColor);
     margin-bottom: 1.5rem;
     font-family: Segoe Ui Variable;
 }
@@ -104,7 +104,7 @@ nav {
     background-color: transparent;
     border: none;
     transition: all 0.2s;
-    color: #fffbd1;
+    color: var(--SecColor);
     font-size: 24px;
 }
 
@@ -123,7 +123,7 @@ button:active {
 } */
 
 .sidebar {
-    background-color: rgba(4, 4, 4, 0.746);
+    background-color: var(--NavbarColor);
     backdrop-filter: blur(100px);
     width: 225px;
     height: 100vh;
@@ -135,7 +135,7 @@ button:active {
 
 .buttonnav {
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.876);
+    background-color: var(--NavbarColor);
     backdrop-filter: blur(50px);
     width: 100%;
     height: 58px;
@@ -153,7 +153,7 @@ button:active {
 }
 
 .buttomNavContent li a {
-    color: #fffbd1;
+    color: var(--SecColor);
     font-size: 26px;
     transform: translateY(3px);
     display: inline-block;
@@ -164,7 +164,7 @@ button:active {
 .language {
     position: fixed;
     height: 160px;
-    background-color: rgba(0, 0, 0, 0.876);
+  background-color: var(--NavbarColor);
     backdrop-filter: blur(50px);
     /* bottom: 58px; */
     bottom: -160px;
@@ -186,12 +186,12 @@ button:active {
 }
 
 .lang-text a {
-    color: #fffbd1;
+    color: var(--SecColor);
     font-size: 32px;
 }
 
 .lang-text h1 {
-    color: #fffbd1;
+    color: var(--SecColor);
     font-family: segoe ui variable;
     font-weight: 400;
     -webkit-text-stroke-width: 1px;
@@ -220,8 +220,10 @@ button:active {
     width: 130px;
     text-align: center;
     border-radius: 2px;
-    color: #000;
-    background-color: #fffbd1;
+    /* color: #000;
+    background-color: #fffbd1; */
+    color: var(--button-color);
+    background-color: var(--button);
     padding: 0.5rem 1rem;
     margin-top: 2rem;
     display: inline-block;
@@ -235,7 +237,7 @@ button:active {
 .Search {
     position: fixed;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.876);
+    background-color: var(--NavbarColor);
     backdrop-filter: blur(50px);
     width: 100%;
     top: -140px;
@@ -251,7 +253,7 @@ button:active {
     margin-bottom: 1.5rem;
     margin-top: 1.2rem;
     left: 50%;
-    color: #fffbd1;
+    color: var(--SecColor);
     font-family: Segoe ui variable;
     font-weight: 400;
     -webkit-text-stroke-width: 1px;
@@ -272,7 +274,7 @@ button:active {
 
 .search-text a {
     font-size: 32px;
-    color: #fffbd1;
+    color: var(--SecColor);
 }
 
 .search {
@@ -292,14 +294,14 @@ button:active {
     height: 36px;
     /* border-radius: 2px 0 0 2px; */
     outline: none;
-    color: #fffbd1;
-    background-color: #000;
-    border: solid 1px #fffbd1;
+    color: var(--colorpureBackGround);
+    background: transparent;
+    border: solid 1px var(--BorderColor);
     padding-left: 1rem;
   }
 
   .searchTerm::placeholder {
-    color: #fff;
+    color: var(--SecColor);
     font-family: Segoe ui variable;
     font-weight: 300;
     -webkit-text-stroke-width: 0.6px;
@@ -312,16 +314,14 @@ button:active {
   .searchButton {
     width: 50px;
     height: 36px;
-    border: 1px solid #fffbd1;
-    background: #fffbd1;
+   border: solid 1px var(--BorderColor);
+    background: var(--colorpureBackGround);
     text-align: center;
-    color: #000;
+    color: var(--Icon-color);
     /* border-radius: 0 2px 2px 0; */
     cursor: pointer;
     font-size: 20px;
   }
-
-  
 
 header {
     position: relative;
@@ -330,7 +330,7 @@ header {
 .headernav {
     display: flex;
     position: relative;
-    background-color: #fffbd1;
+    background-color: var(--color-text);
     height: 60px;
 }
 
@@ -377,7 +377,7 @@ header {
 }
 
 .header-content {
-    background: rgb(255, 251, 209);
+    background: var(--color-text);
     backdrop-filter: blur(20px);
     height: 400px;
 }
@@ -448,7 +448,7 @@ header {
 }
 
 .text-sugess h1 {
-    color: #fffbd1;
+    color: var(--SecColor);
     font-family: madimione;
     font-size: 26px;
     letter-spacing: -0.3px;
@@ -461,7 +461,7 @@ header {
 }
 
 .text-sugess p {
-    color: #fff;
+    color: var(--SecColor);
     margin-top: 0.5rem;
     margin-bottom: 1rem;
     font-weight: 300;
@@ -517,7 +517,7 @@ header {
 }
 
 .SignIn {
-    background: rgb(255, 251, 209);
+    background: var(--color-text);
     backdrop-filter: blur(20px);
     height: 400px;
     position: relative;
@@ -577,7 +577,7 @@ header {
 }
 
 .PeakkPro {
-    background: rgb(255, 251, 209);
+    background: var(--color-text);
     backdrop-filter: blur(20px);
     height: 400px;
 }
@@ -689,7 +689,7 @@ a:active {
     width: 0px;
     height: 100vh;
     transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.7s all;
-    background-color: rgba(0, 0, 0, 0.668);
+    background-color: var(--BackgroundProces);
 }
 
 /* motion bg */
@@ -711,7 +711,7 @@ a:active {
     width: 20px;
     height: 20px;
     background: transparent;
-    border: solid 2px #fffbd1;
+    border: solid 2px var(--SecColor);
     animation: animate 25s linear infinite;
     bottom: -150px;
 

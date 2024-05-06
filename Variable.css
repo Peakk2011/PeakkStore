@@ -3,12 +3,40 @@
   --color-background: #0c0c0c;
   --color-text: #fffbd1;
   --color-accent: #000;
+  --SecColor: #fffbd1;
+  --NavbarColor: rgba(0, 0, 0, 0.876);
+  --BackgroundProces: rgba(0, 0, 0, 0.668);
+  /* Button Diferent color check */
+  --button: #fffbd1; 
+  --button-color: #000; 
+    /* search */
+    --colorBackGround: #fffbd1;
+    --colorpureBackGround: #fffbd1;
+    --BorderColor: #fffbd1;
+    --Icon-color: #000;
+    /* Selecter */
+    --Seclecter: #fffbd1;
+    --SeclecterColor: #000;
 }
 
 [data-selected-theme="blue"] {
-  --color-background: #55dde0;
-  --color-text: #2B4150;
-  --color-accent: #00D4E7;
+  --color-background: #ffffe9;
+  --color-text: #fffde6;
+  --color-accent: #000;
+  --SecColor: #000;
+  --NavbarColor: rgba(255, 255, 233, 0.932);
+  --BackgroundProces: rgba(255, 255, 255, 0.363);
+    /* Button Diferent color check */
+  --button: #000; 
+  --button-color: #fff; 
+  /* search */
+  --colorBackGround: #fffde6;
+  --colorpureBackGround: #000;
+  --BorderColor: #000;
+  --Icon-color: #fff;
+    /* Selecter */
+  --Seclecter: #000;
+  --SeclecterColor: #ffffe9;
 }
 
 [data-selected-theme="pink"] {
@@ -27,11 +55,13 @@
 
 .ThemeElement {
     position: fixed;
-    bottom: 58px;
-    background-color: rgba(0, 0, 0, 0.876);
+    /* bottom: 58px; */
+    bottom: -250px;
+    background-color: var(--NavbarColor);
     backdrop-filter: blur(50px);
     width: 100%;
     z-index: 2;
+    /* opacity: 0; */
 }
 
 .ThemeTextElementSpc {
@@ -40,7 +70,7 @@
 }
 
 .ThemeTextElementSpc h1 {
-    color: var(--color-text);
+    color: var(--SecColor);   
     font-family: madimione;
     font-size: 26px;
     margin-top: 1.4rem;
@@ -48,7 +78,7 @@
 }
 
 .ThemeTextElementSpc p {
-    color: #fff;   
+    color: var(--SecColor);   
     font-family: Segoe Ui Variable;
     font-weight: 300;
     -webkit-text-stroke-width: 0.4px;
@@ -66,6 +96,18 @@
     width: 300px;
     margin: 2.2rem auto;
   }
+
+.ThemeSelecter-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ThemeSelecter-text a {
+  color: var(--color-text);
+  font-size: 32px;
+  transform: translateY(8px);
+}
   
   button[data-theme] {
     margin: 0;
@@ -75,8 +117,8 @@
     backdrop-filter: blur(20px);
     padding: 0.6rem 0rem;
     width: 75px;
-    color: var(--color-text);
-    border: 1px solid var(--color-text);
+    color: var(--SecColor);   
+    border: 1px solid var(--SecColor);
     font-family: Segoe ui variable;
     font-weight: 300;
     letter-spacing: 0.8px;
@@ -97,8 +139,8 @@
   }
   
   button[data-theme][aria-pressed="true"] {
-    background-color: var(--color-text);
-    color: var(--color-background);
+    background-color: var(--Seclecter);
+    color: var(--SeclecterColor);
   }
   
   button[data-theme]:is(:hover, :focus) {

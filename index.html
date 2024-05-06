@@ -93,7 +93,7 @@
             <li><a href="#"><ion-icon name="home-sharp"></ion-icon></a></li>
             <li><a onclick="GetSearchOn()"><ion-icon name="search-sharp"></ion-icon></a></li>
             <li><a href="#"><ion-icon name="settings-outline"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="color-fill-outline"></ion-icon></a></li>
+            <li><a onclick="ThemeSetupCheck()"><ion-icon name="color-fill-outline"></ion-icon></a></li>
             <li><a onclick="LanguageSetup()"><ion-icon name="language-sharp"></ion-icon></a></li>
             <li><a href="#"><ion-icon name="terminal-outline"></ion-icon></a></li>
         </div>
@@ -131,18 +131,21 @@
         </div>
     </div>
 
-    <div class="ThemeElement">
+    <div class="ThemeElement" id="ThemeDevelopSETUP">
         <div class="ThemeTextElementSpc">
+            <div class="ThemeSelecter-text">
                 <h1><ion-icon name="person-sharp"></ion-icon>Theme Switcher</h1>
+                <a href="javascript:void(0)" class="closebtn" onclick="ThemeCloseCheck()">&times;</a>
+            </div>
                 <p>This is theme switcher<br>on bottom side thay have option that select your prefes theme there have 4 color.</p>
         </div>
         <div class="theme-switcher">
             <!-- Area pressed True = default -->
             <!-- On data theme color not true -->
             <button data-theme="green" aria-pressed="true">Default</button>
-            <button data-theme="blue" aria-pressed="false">Blue</button>
-            <button data-theme="pink" aria-pressed="false">Pink</button>
-            <button data-theme="orange" aria-pressed="false">Orange</button>
+            <button data-theme="blue" aria-pressed="false">Light</button>
+            <button data-theme="pink" aria-pressed="false">Cream</button>
+            <button data-theme="orange" aria-pressed="false">Modern</button>
         </div>
     </div>
 

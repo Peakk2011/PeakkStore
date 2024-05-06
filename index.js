@@ -41,18 +41,38 @@ function GetSearchOn() {
     }
     // document.body.style.backdropFilter = "blur(20px)"
     document.getElementById("LanguageToggle").style.opacity = "0"
+        // close theme when Search work
+        const ThemeSetUP = document.getElementById("ThemeDevelopSETUP");
+        ThemeSetUP.style.opacity = "0"
+        ThemeSetUP.style.bottom = "-240px"
+        document.getElementById("Backgro").style.opacity = "1"
+        document.getElementById("Backgro").style.visibility = "hidden"
+        document.getElementById("Backgro").style.width = "0px"
 }
 
 function CloseSearch() {
     document.getElementById("SearchBox").style.opacity = "0"
     document.getElementById("SearchBox").style.top = "-140px"
     // document.body.style.backdropFilter = "blur(0px)"
+    const ThemeSetUP = document.getElementById("ThemeDevelopSETUP");
+    ThemeSetUP.style.opacity = "0"
+    ThemeSetUP.style.bottom = "-240px"
+    document.getElementById("Backgro").style.opacity = "1"
+    document.getElementById("Backgro").style.visibility = "hidden"
+    document.getElementById("Backgro").style.width = "0px"
 }
 
 function LanguageSetup() {
     document.getElementById("LanguageToggle").style.bottom = "58px"
     document.getElementById("LanguageToggle").style.opacity = "1"
     document.getElementById("SearchBox").style.opacity = "0"
+    // close theme when language proces
+    const ThemeSetUP = document.getElementById("ThemeDevelopSETUP");
+    ThemeSetUP.style.opacity = "0"
+    ThemeSetUP.style.bottom = "-240px"
+    document.getElementById("Backgro").style.opacity = "1"
+    document.getElementById("Backgro").style.visibility = "hidden"
+    document.getElementById("Backgro").style.width = "0px"
 }
 
 function CloseLanguageSetup() {
@@ -70,6 +90,38 @@ function changeCss() {
     var HeaderPall = document.querySelector("header"); //after >
     this.scrollY > 350 ? HeaderPall.style.opacity = 0 : HeaderPall.style.opacity = 1;
 
+}
+
+function ThemeSetupCheck() {
+  const ThemeSetUP = document.getElementById("ThemeDevelopSETUP");
+  ThemeSetUP.style.opacity = "1"
+  ThemeSetUP.style.bottom = "58px"
+  ThemeSetUP.style.zIndex = "3";
+  document.getElementById('MainBottomNavbar').style.zIndex = "4";
+  document.getElementById("SearchBox").style.zIndex = "3"
+  document.getElementById("Backgro").style.opacity = "1"
+  document.getElementById("Backgro").style.visibility = "visible"
+  document.getElementById("Backgro").style.width = "100%"
+  // document.body.style.overflow = "hidden"
+  // language hide when click
+  document.getElementById("LanguageToggle").style.bottom = "-160px"
+  document.getElementById("LanguageToggle").style.opacity = "0"
+}
+
+function ThemeCloseCheck() {
+  const ThemeSetUP = document.getElementById("ThemeDevelopSETUP");
+  ThemeSetUP.style.opacity = "0"
+  ThemeSetUP.style.bottom = "-240px"
+  document.getElementById("Backgro").style.opacity = "1"
+  document.getElementById("Backgro").style.visibility = "hidden"
+  document.getElementById("Backgro").style.width = "0px"
+  document.body.style.overflow = "scroll"
+  // language hide when click
+  document.getElementById("LanguageToggle").style.bottom = "-160px"
+  document.getElementById("LanguageToggle").style.opacity = "0"
+  // IF close theme search will close too
+  document.getElementById("SearchBox").style.opacity = "0"
+  document.getElementById("SearchBox").style.top = "-140px"
 }
 
 changeCss()
