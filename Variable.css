@@ -51,6 +51,10 @@
   --color-accent: #F3601C;
 }
 
+.menu-link {
+  background-color: var(--NavbarColor);
+}
+
 /* Theme Swap */
 
 .ThemeElement {
@@ -71,7 +75,9 @@
 
 .ThemeTextElementSpc h1 {
     color: var(--SecColor);   
-    font-family: madimione;
+    font-family: segoe ui variable;
+    font-weight: 400;
+    -webkit-text-stroke-width: 1px;
     font-size: 26px;
     margin-top: 1.4rem;
     margin-bottom: 0.7rem;
@@ -104,7 +110,7 @@
 }
 
 .ThemeSelecter-text a {
-  color: var(--color-text);
+  color: var(--SecColor); 
   font-size: 32px;
   transform: translateY(8px);
 }

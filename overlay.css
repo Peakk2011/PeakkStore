@@ -1,0 +1,46 @@
+.OverlayHomeSecure {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--NavbarColor);
+    position: fixed;
+    backdrop-filter: blur(20px);
+    z-index: 6;
+    display: none;
+}
+
+.HomeSecureCon {
+    position: absolute;
+    top: 50%;
+    background-color: var(--color-background);
+    transform: translateY(-50%);
+    border: solid 2px #222;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+}
+
+.HomeSecureContent {
+    height: 190px;
+    max-width: 300px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.homeClickText h1 {
+    color: var(--SecColor);
+    font-size: 24px;
+    margin-top: 1.5rem;
+}
+
+.homeClickText a {
+    color: var(--SecColor);
+    text-align: center;
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.5rem 2rem;
+    border: solid 1px var(--SecColor);
+    font-family: SEGOE UI VARIABLE;
+    font-weight: 300;
+    -webkit-text-stroke-width: 1px;
+    border-radius: 4px;
+}

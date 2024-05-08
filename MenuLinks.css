@@ -1,0 +1,83 @@
+.menu-link {
+    background-color: var(--NavbarColor);
+    width: 300px;
+    height: 355px;
+    position: fixed;
+    z-index: 1;
+    backdrop-filter: blur(70px);
+    bottom: -370px;
+    right: 50%;
+    transform: translateX(50%);
+    border: solid 1px #222;
+    border-radius: 6px;
+    z-index: 11;
+}
+
+.MenuBlur {
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background-color: var(--BackgroundProces);
+    position: fixed;
+    backdrop-filter: blur(20px);
+    bottom: -100%;
+}
+
+.Menu-content {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.MenuText {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.MenuText ion-icon {
+    font-size: 26px;
+    display: flex;
+    color: var(--SecColor);
+}
+
+.Menu-content h1 {
+    display: flex;
+    font-family: Segoe ui variable;
+    font-size: 26px;
+    font-weight: 400;
+    -webkit-text-stroke-width: 1px;
+    color: var(--SecColor);
+}
+
+.Menu-content h1 ion-icon {
+    transform: translateY(5px);
+    margin-right: 0.5rem;
+}
+
+.Menu-content hr {
+    margin-top: 0.5rem;
+    border: solid 1px var(--SecColor);
+    width: 30%;
+}
+
+.Menu-content ul {
+    margin-top: 1.5rem;
+}
+
+.Menu-content a {
+    margin-top: 0.5rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    border: solid 1px var(--BorderColor);
+    color: var(--SecColor);
+    font-family: Segoe ui variable;
+    font-weight: 300;
+    -webkit-text-stroke-width: 0.4px;
+}
+
+.Menu-content a ion-icon {
+    transform: translateY(2px);
+    margin-right: 10px;
+}

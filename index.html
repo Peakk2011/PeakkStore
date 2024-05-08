@@ -4,44 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M.Napat Website</title>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="Font.css">
     <link rel="stylesheet" href="Loader.css">
     <link rel="stylesheet" href="Variable.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="MenuLinks.css">
+    <link rel="stylesheet" href="Settings.css">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="overlay.css">
     <!-- Primary Meta Tags -->
-    <meta name="title" content="M.Napat Website" />
+    <title>Peakk - Peakk Store</title>
+    <meta name="title" content="Peakk - Peakk Store" />
     <meta name="description" content="Welcome to Peakk store this page is a developer tool it make for you." />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://peakk2011.github.io/PeakkStore/" />
-    <meta property="og:title" content="M.Napat Website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="Peakk - Peakk Store" />
     <meta property="og:description" content="Welcome to Peakk store this page is a developer tool it make for you." />
-    <meta property="og:image" content="./Image/Logo.png" />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://peakk2011.github.io/PeakkStore/" />
-    <meta property="twitter:title" content="M.Napat Website" />
-    <meta property="twitter:description" content="Welcome to Peakk store this page is a developer tool it make for you." />
-    <meta property="twitter:image" content="./Image/Logo.png" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta property="twitter:title" content="Peakk - Peakk Store" />
+    <meta property="twitter:description"
+        content="Welcome to Peakk store this page is a developer tool it make for you." />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
 
-<!-- Meta Tags Generated with https://metatags.io -->
+    <!-- Meta Tags Generated with https://metatags.io -->
 </head>
 
 <body>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- data aos -->
-    <script>
-        AOS.init();
-    </script>
 
-    <img src="" alt="">
+    <div id="CropSetting">
+
+        <!-- SETTINGS -->
+        <div class="SettingBlurBac"></div>
+
+        <div class="setting">
+            <div class="setting-content">
+                <div class="setting-text">
+                    <h1>Peakk Store Setting</h1>
+                    <a onclick="ClOSESettingsCheck()">CLOSE</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
     <!-- SecureWhenPCUseruse -->
 
@@ -57,7 +69,8 @@
                 </div>
                 <div class="Alert-links">
                     <a href="#"><ion-icon name="arrow-forward-outline"></ion-icon>Go to desktop site</a>
-                    <a href="https://www.google.com/" target="_blank"><ion-icon name="arrow-forward-outline"></ion-icon>Exit to mobile site</a>
+                    <a href="https://www.google.com/" target="_blank"><ion-icon
+                            name="arrow-forward-outline"></ion-icon>Exit to mobile site</a>
                 </div>
             </div>
         </div>
@@ -85,202 +98,240 @@
 
     </div>
 
-    <nav id="NavbarVeryMainNo">
-        <div class="navbar">
-            <div class="navbar-logo">
+    <!-- CONTENT START HERE -->
+    <div id="MAINBODYSTYLEOUT">
+
+        <nav id="NavbarVeryMainNo">
+            <div class="navbar">
+                <div class="navbar-logo">
+                    <h1><ion-icon name="bag-handle-sharp"></ion-icon>Peakk Store</h1>
+                </div>
+                <div class="navbar-links">
+                    <button id="myBtn" class="css-only-ripple">&#9776;</button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="sidebar" id="MainNavSideOFF">
+            <div class="toggle" id="GetNavOnNow">
                 <h1><ion-icon name="bag-handle-sharp"></ion-icon>Peakk Store</h1>
-            </div>
-            <div class="navbar-links">
-                <button id="myBtn" class="css-only-ripple">&#9776;</button>
-            </div>
-        </div>
-    </nav>
-
-    <div class="sidebar" id="MainNavSideOFF">
-        <div class="toggle" id="GetNavOnNow">
-            <h1><ion-icon name="bag-handle-sharp"></ion-icon>Peakk Store</h1>
-            <li id="TurnNavOFF" style="cursor: pointer;"><a><ion-icon name="exit-outline"></ion-icon>Exit</a></li>
-            <li><a href="#"><ion-icon name="add-outline"></ion-icon>Website</a></li>
-            <li><a href="#"><ion-icon name="add-outline"></ion-icon>Website</a></li>
-            <li><a href="#"><ion-icon name="add-outline"></ion-icon>Website</a></li>
-            <li><a href="#"><ion-icon name="add-outline"></ion-icon>Website</a></li>
-            <li><a href="#"><ion-icon name="add-outline"></ion-icon>Website</a></li>
-            <li><a onclick="logout()"><ion-icon name="add-outline"></ion-icon>Logout</a></li>
-        </div>
-    </div>
-
-    <div class="buttonnav" id="MainBottomNavbar">
-        <div class="buttomNavContent">
-            <li><a href="#"><ion-icon name="home-sharp"></ion-icon></a></li>
-            <li><a onclick="GetSearchOn()"><ion-icon name="search-sharp"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="settings-outline"></ion-icon></a></li>
-            <li><a onclick="ThemeSetupCheck()"><ion-icon name="color-fill-outline"></ion-icon></a></li>
-            <li><a onclick="LanguageSetup()"><ion-icon name="language-sharp"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="terminal-outline"></ion-icon></a></li>
-        </div>
-    </div>
-
-    <div class="BackgroundBlur" id="Backgro"></div>
-
-    <!-- Language setup -->
-
-    <div class="language" id="LanguageToggle">
-        <div class="lang">
-            <div class="lang-text">
-                <h1><ion-icon name="language-sharp"></ion-icon>language</h1>
-                <a href="javascript:void(0)" class="closebtn" onclick="CloseLanguageSetup()">&times;</a>
-            </div>
-            <div class="lang-link">
-                <a href="#">English<ion-icon name="checkmark-sharp"></ion-icon></a>
-                <a href="#">Thai</a>
+                <li id="TurnNavOFF" style="cursor: pointer;"><a><ion-icon name="exit-outline"></ion-icon>Exit</a></li>
+                <li><a href="#"><ion-icon name="add-outline"></ion-icon>Website</a></li>
+                <li><a href="#"><ion-icon name="add-outline"></ion-icon>Website</a></li>
+                <li><a href="#"><ion-icon name="add-outline"></ion-icon>Website</a></li>
+                <li><a href="#"><ion-icon name="add-outline"></ion-icon>Website</a></li>
+                <li><a href="#"><ion-icon name="add-outline"></ion-icon>Website</a></li>
+                <li><a onclick="logout()"><ion-icon name="add-outline"></ion-icon>Logout</a></li>
             </div>
         </div>
-    </div>
 
-    <div class="Search" id="SearchBox">
-        <div class="search-content">
-            <div class="search-text">
-                <h1><ion-icon name="search-sharp"></ion-icon>Search</h1>
-                <a href="javascript:void(0)" class="closebtn" onclick="CloseSearch()">&times;</a>
-            </div>
-            <div class="search">
-                <input type="text" class="searchTerm" placeholder="Type here to search">
-                <button type="submit" class="searchButton">
-                    <ion-icon name="search-sharp"></ion-icon>
-                </button>
+        <div class="buttonnav" id="MainBottomNavbar">
+            <div class="buttomNavContent">
+                <li><a onclick="ALERTCLICK()"><ion-icon name="home-sharp"></ion-icon></a></li>
+                <li><a onclick="GetSearchOn()"><ion-icon name="search-outline"></ion-icon></a></li>
+                <li><a onclick="setting()"><ion-icon name="settings-outline"></ion-icon></a></li>
+                <li><a onclick="ThemeSetupCheck()"><ion-icon name="color-fill-outline"></ion-icon></a></li>
+                <li><a onclick="LanguageSetup()"><ion-icon name="language-outline"></ion-icon></a></li>
+                <li><a onclick="MenuLinksSetup()"><ion-icon name="ellipsis-vertical-outline"></ion-icon></a></li>
             </div>
         </div>
-    </div>
 
-    <div class="ThemeElement" id="ThemeDevelopSETUP">
-        <div class="ThemeTextElementSpc">
-            <div class="ThemeSelecter-text">
-                <h1><ion-icon name="person-sharp"></ion-icon>Theme Switcher</h1>
-                <a href="javascript:void(0)" class="closebtn" onclick="ThemeCloseCheck()">&times;</a>
-            </div>
-                <p>This is theme switcher<br>on bottom side thay have option that select your prefes theme there have 4 color.</p>
-        </div>
-        <div class="theme-switcher">
-            <!-- Area pressed True = default -->
-            <!-- On data theme color not true -->
-            <button data-theme="green" aria-pressed="true">Default</button>
-            <button data-theme="blue" aria-pressed="false">Light</button>
-            <button data-theme="pink" aria-pressed="false">Cream</button>
-            <button data-theme="orange" aria-pressed="false">Modern</button>
-        </div>
-    </div>
+        <div class="BackgroundBlur" id="Backgro"></div>
 
-    <ul class="circles">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
+        <!-- SECURE ALREADY CLICK HOME BUTTON -->
 
-    <header>
-        <div class="headernav">
-            <div class="headernav-con">
-                <div class="headernav-text">
-                    <img src="./Image/Peakk-Logo/TranprancyLogo.png" alt="">
-                    <h1>Store</h1>
-                </div>
-                <div class="Headernav-text-logo-href-links-on-secound-navbar-before-mainNavbar-begin">
-                    <li><a href="#"><ion-icon name="download-outline"></ion-icon>Portfolio</a></li>
-                </div>
-            </div>
-        </div>
-        <div class="header-content">
-            <div class="header-text">
-                <div class="header-lines-text">
-                    <ion-icon name="documents-sharp"></ion-icon>
-                    <h1>Welcome to Peakk store this page is a developer tool it make for you.</h1>
-                    <li><a href="#"><ion-icon name="walk-sharp"></ion-icon>Click me to begin</a></li>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <div class="container">
-
-        <div class="text-sugess">
-            <h1><ion-icon name="extension-puzzle"></ion-icon>Developer Tools</h1>
-            <p>Slide more to see more content</p>
-        </div>
-
-        <div class="Slider">
-            <div class="blue"></div>
-            <div class="green"></div>
-            <div class="blue"></div>
-            <div class="green"></div>
-            <div class="blue"></div>
-            <div class="green"></div>
-            <div class="blue"></div>
-        </div>
-
-    </div>
-
-    <div class="SignIn" data-aos="fade-down" data-aos-anchor-placement="center-center">
-        <div class="signin-content">
-            <div class="sign-text">
-                <div class="signin-text-border">
-                    <ion-icon name="id-card-sharp"></ion-icon>
-                    <h1>Let's know who come to my website.</h1>
-                    <div class="Flex-link-btn">
-                        <li><a href="login.html"><ion-icon name="arrow-forward-sharp"></ion-icon>Sign In</a></li>
-                        <li><a href="login.html">Sign Up</a></li>
+        <div class="OverlayHomeSecure" id="OVERLAYSETUP">
+            <div class="HomeSecureCon">
+                <div class="HomeSecureContent">
+                    <div class="homeClickText">
+                        <h1>THIS IS HOME PAGE YOU CLICK IT ALREADY YOU CAN EXIT NOW.</h1>
+                        <a onclick="OFFHOMESECURECheck()">EXIT TO WEBSITE</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="reveal">
+        <!-- Open links -->
 
-    <div class="TxTarea">
+        <div class="MenuBlur" id="MenuBlurToggleDirefent"></div>
 
-        <div class="text-sugess">
-            <h1><ion-icon name="person-sharp"></ion-icon>Peakk Product</h1>
-            <p>Hello im Peakk This is my product <br>scroll more to see my product.</p>
+        <div class="menu-link" id="ToogleLinks">
+            <div class="Menu-content">
+                <div class="MenuText">
+                    <h1><ion-icon name="menu-sharp"></ion-icon>Links</h1>
+                    <span onclick="MenuLinksCloseCheck()"><ion-icon name="close-sharp"></ion-icon></span>
+                </div>
+                <hr>
+                <ul>
+                    <li><a href="#"><ion-icon name="terminal-sharp"></ion-icon>JavaScript</a></li>
+                    <li><a href="#"><ion-icon name="browsers-sharp"></ion-icon>HTML</a></li>
+                    <li><a href="#"><ion-icon name="logo-css3"></ion-icon>CSS</a></li>
+                    <li><a href="#"><ion-icon name="text-sharp"></ion-icon>TypeFace</a></li>
+                    <li><a href="#"><ion-icon name="grid"></ion-icon>Miscellaneous</a></li>
+                </ul>
+            </div>
         </div>
 
-    </div>
+        <!-- Language setup -->
 
-
-
-    <div class="PeakkPro" data-aos="fade-down">
-        <div class="product">
-            <div class="pro-text">
-                <ion-icon name="person-sharp"></ion-icon>
-                <h1>Peakk product</h1>
-                <hr>
-                <p>Before that i recommend to let you watch my portfolio</p>
-                <div class="product-link">
-                    <a href="#">All Product</a>
-                    <a href="#"><img src="./Image/Peakk-Logo/Mask group.png" alt="">Peakk Product</a>
+        <div class="language" id="LanguageToggle">
+            <div class="lang">
+                <div class="lang-text">
+                    <h1><ion-icon name="language-sharp"></ion-icon>language</h1>
+                    <a href="javascript:void(0)" class="closebtn" onclick="CloseLanguageSetup()">&times;</a>
+                </div>
+                <div class="lang-link">
+                    <a href="#">English<ion-icon name="checkmark-sharp"></ion-icon></a>
+                    <a href="#">Thai</a>
                 </div>
             </div>
         </div>
-    </div>
+
+        <div class="Search" id="SearchBox">
+            <div class="search-content">
+                <div class="search-text">
+                    <h1><ion-icon name="search-sharp"></ion-icon>Search</h1>
+                    <a href="javascript:void(0)" class="closebtn" onclick="CloseSearch()">&times;</a>
+                </div>
+                <div class="search">
+                    <input type="text" class="searchTerm" placeholder="Type here to search">
+                    <button type="submit" class="searchButton">
+                        <ion-icon name="search-sharp"></ion-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="ThemeElement" id="ThemeDevelopSETUP">
+            <div class="ThemeTextElementSpc">
+                <div class="ThemeSelecter-text">
+                    <h1><ion-icon name="person-sharp"></ion-icon>Theme Switcher</h1>
+                    <a href="javascript:void(0)" class="closebtn" onclick="ThemeCloseCheck()">&times;</a>
+                </div>
+                <p>This is theme switcher<br>on bottom side thay have option that select your prefes theme there have 4
+                    color.</p>
+            </div>
+            <div class="theme-switcher">
+                <!-- Area pressed True = default -->
+                <!-- On data theme color not true -->
+                <button data-theme="green" aria-pressed="true">Default</button>
+                <button data-theme="blue" aria-pressed="false">Light</button>
+                <button data-theme="pink" aria-pressed="false">Cream</button>
+                <button data-theme="orange" aria-pressed="false">Modern</button>
+            </div>
+        </div>
+
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+        <header>
+            <div class="headernav">
+                <div class="headernav-con">
+                    <div class="headernav-text">
+                        <img src="./Image/Peakk-Logo/TranprancyLogo.png" alt="">
+                        <h1>Store</h1>
+                    </div>
+                    <div class="Headernav-text-logo-href-links-on-secound-navbar-before-mainNavbar-begin">
+                        <li><a href="#"><ion-icon name="download-outline"></ion-icon>Portfolio</a></li>
+                    </div>
+                </div>
+            </div>
+            <div class="header-content">
+                <div class="header-text">
+                    <div class="header-lines-text">
+                        <ion-icon name="documents-sharp"></ion-icon>
+                        <h1>Welcome to Peakk store this page is a developer tool it make for you.</h1>
+                        <li><a href="#"><ion-icon name="walk-sharp"></ion-icon>Click me to begin</a></li>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+
+            <div class="text-sugess">
+                <h1><ion-icon name="extension-puzzle"></ion-icon>Developer Tools</h1>
+                <p>Slide more to see more content</p>
+            </div>
+
+            <div class="Slider">
+                <div class="blue"></div>
+                <div class="green"></div>
+                <div class="blue"></div>
+                <div class="green"></div>
+                <div class="blue"></div>
+                <div class="green"></div>
+                <div class="blue"></div>
+            </div>
+
+        </div>
+
+        <div class="SignIn">
+            <div class="signin-content">
+                <div class="sign-text">
+                    <div class="signin-text-border">
+                        <ion-icon name="id-card-sharp"></ion-icon>
+                        <h1>Let's know who come to my website.</h1>
+                        <div class="Flex-link-btn">
+                            <li><a href="login.html"><ion-icon name="arrow-forward-sharp"></ion-icon>Sign In</a></li>
+                            <li><a href="login.html">Sign Up</a></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reveal">
+
+            <div class="TxTarea">
+
+                <div class="text-sugess">
+                    <h1><ion-icon name="person-sharp"></ion-icon>Peakk Product</h1>
+                    <p>Hello im Peakk This is my product <br>scroll more to see my product.</p>
+                </div>
+
+            </div>
 
 
-    <div class="TxTarea">
 
-        <div class="text-sugess">
-            <h1><ion-icon name="text"></ion-icon>TypeFace</h1>
-            <p>This is font or typeface section that show a recommend typeface that i select for you.</p>
+            <div class="PeakkPro">
+                <div class="product">
+                    <div class="pro-text">
+                        <ion-icon name="person-sharp"></ion-icon>
+                        <h1>Peakk product</h1>
+                        <hr>
+                        <p>Before that i recommend to let you watch my portfolio</p>
+                        <div class="product-link">
+                            <a href="#">All Product</a>
+                            <a href="#"><img src="./Image/Peakk-Logo/Mask group.png" alt="">Peakk Product</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="TxTarea">
+
+                <div class="text-sugess">
+                    <h1><ion-icon name="text"></ion-icon>TypeFace</h1>
+                    <p>This is font or typeface section that show a recommend typeface that i select for you.</p>
+                </div>
+
+            </div>
+
         </div>
 
     </div>
-
-</div>
-
-
 
     <script src="index.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script> -->
