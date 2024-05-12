@@ -6,60 +6,10 @@
     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-/* motion background #2 */
-
-@-webkit-keyframes bg-scrolling-reverse {
-    100% {
-        background-position: 0px 50px;
-    }
-}
-
-@-moz-keyframes bg-scrolling-reverse {
-    100% {
-        background-position: 0px 50px;
-    }
-}
-
-@-o-keyframes bg-scrolling-reverse {
-    100% {
-        background-position: 0px 50px;
-    }
-}
-
-@keyframes bg-scrolling-reverse {
-    100% {
-        background-position: 0px 50px;
-    }
-}
-
-@-webkit-keyframes bg-scrolling {
-    0% {
-        background-position: 50px 50px;
-    }
-}
-
-@-moz-keyframes bg-scrolling {
-    0% {
-        background-position: 50px 50px;
-    }
-}
-
-@-o-keyframes bg-scrolling {
-    0% {
-        background-position: 50px 50px;
-    }
-}
-
-@keyframes bg-scrolling {
-    0% {
-        background-position: 50px 50px;
-    }
-}
-
 /* Main styles */
 .background {
     /* img size is 50x50 */
-    background-color: #FFF;
+    background: var(--color-text);
     -webkit-animation-timing-function: linear;
     -moz-animation-timing-function: linear;
     -o-animation-timing-function: linear;
@@ -70,57 +20,25 @@
     z-index: 100;
 }
 
-.conn p {
-    font-size: 50px;
-    margin: 0;
-    padding-right: 1.4rem;
-
-    background-color: fff;
-    background-image: linear-gradient(0deg, #000 60%, #000000);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-
-    --wght-min: 46;
-    --wght-max: 200;
-}
-
-.conn p>span {
-    animation: breath 1.5s alternate ease-in-out;
-    animation-iteration-count: infinite;
-    animation-delay: 1s;
-    animation-fill-mode: both;
-}
-
-@keyframes breath {
-    0% {
-        font-variation-settings: "wght" var(--wght-min);
-    }
-
-    100% {
-        font-variation-settings: "wght" var(--wght-max);
-    }
-}
-
 .content {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     /* background: #ffeba8;
     box-shadow: -5px 1px 12px #f2dfa0, 1px 1px 18px #fff7b0; */
-    animation: SLide 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation: SLide 1.2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-
 
 @keyframes SLide {
     0% {
-        left:-10px;
+        opacity: 0;
+        scale: 20%;
         filter: blur(20px);
     }
     100% {
-        left:50%;
+        opacity: 1;
+        scale: 100%;
     }
 }
 
@@ -132,7 +50,6 @@
 
 .Icon-loader {
     aspect-ratio: 1 / 1;
-    width: 45px;
 }
 
 @media screen and (max-width: 700px) {
@@ -161,6 +78,6 @@
     }
 
     .Icon-loader {
-        width: 50px;
+        width: 130px;
     }
 }
