@@ -2,25 +2,140 @@
     margin-top: 70rem;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s all;
     position: fixed;
+    background-color: #060606;
 }
 
 .SettingBlurBac {
     width: 100%;
     height: 100vh;
-    z-index: 15;
+    z-index: 16;
     position: fixed;
-    background-color: #080808;
+    background-color: #060606;
 }
 
 .setting {
     z-index: 16;
     position: fixed;
+    width: 100%;
+    width: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 1.5rem;
+}
+
+.settings-content {
+    overflow: scroll;
+}
+
+.setting-search .search {
+    margin-top: 1.5rem;
+}
+
+.setting-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .setting-text h1 {
     color: #fff;
+    font-family: SFPRO;
+    font-size: 20px;
+    display: flex;
+}
+
+.setting-text img {
+    width: 34px;
+    border-radius: 4px;
 }
 
 .setting-text a {
+    font-family: Potato;
     color: #fff;
+    font-size: 26px;
+    display: flex;
+}
+
+/* setting content */
+
+.settingsContent-ButtonLoginCheck li a {
+    color: #000;
+    padding: 0.4rem 1rem;
+    background-color: #98AD95;
+    border-radius: 3px;
+    font-weight: 300;
+    -webkit-text-stroke-width: 1.2px;
+}
+
+#OutlineTEXTSETTING {
+    background-color: transparent;
+    color: #98AD95;
+}
+
+#NotRecommendTEXTSETTING {
+    background-color: transparent;
+    color: #98AD95;
+}
+
+.settingsContent-ButtonLoginCheck {
+    display: flex;
+    gap: 15px;
+    margin-top: 2.4rem;
+}
+
+.settings-content h1 {
+    color: #fff;
+    font-family: SFPRO;
+    font-size: 24px;
+}
+
+#SearchINPUTOnSet {
+    border-radius: 4px 0 0 4px;
+    border: solid 1px #98AD95;
+}
+
+#SearchINPUTOnSet::placeholder {
+    color: #ccc;
+}
+
+#SearchBTNOnSet {
+    background-color: #98AD95;
+    border: solid 1px #98AD95;
+    border-radius: 0 4px 4px 0;
+}
+
+.settings-content h1 img {
+    width: 35px;
+    transform: translateY(9px);
+}
+
+.settings-content p {
+    color: #98AD95;
+    margin: 1rem 0px;
+    font-family: Segoe Ui Variable;
+    font-weight: 300;
+    -webkit-text-stroke-width: 0.4px;
+    font-size: 14px;
+    width: 90%;
+}
+
+.PrefesthemeSett h1 {
+    margin-top: 2.5rem;
+}
+
+.PrefesthemeSett .theme-switcher {
+    margin: 1.5rem 0;
+}
+
+#SettingsButtonCheck {
+    padding: 0.5rem 1rem;
+    background-color: #98AD95;
+    -webkit-text-stroke-width: 0.8px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 0.5rem;
+}
+
+#LanguageSettings h1 {
+    margin-bottom: 0.7rem;
 }

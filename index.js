@@ -68,7 +68,7 @@ function CloseSearch() {
 }
 
 function LanguageSetup() {
-  document.getElementById("LanguageToggle").style.bottom = "58px"
+  document.getElementById("LanguageToggle").style.bottom = "56px"
   document.getElementById("LanguageToggle").style.opacity = "1"
   document.getElementById("SearchBox").style.opacity = "0"
   // close theme when language proces
@@ -228,7 +228,7 @@ function setting() {
   }, 900);
   setTimeout(function () {
     document.getElementById("CropSetting").style.marginTop = "0rem"
-  }, 300);
+  }, 160);
   document.getElementById("MAINBODYSTYLEOUT").className = 'SlideAnimationBODY';
 }
 
@@ -240,6 +240,59 @@ function ClOSESettingsCheck() {
     document.getElementById("MAINBODYSTYLEOUT").className = 'SlideAnimationBODYremove';
     // document.getElementById("CropSetting").style.marginTop = "0rem"
   }, 100);
+}
+
+// Theme selecter on settings
+
+function OpenThemeSecOnSettings() {
+  // close settings first when toggle settings
+  document.getElementById("CropSetting").style.marginTop = "70rem"
+  setTimeout(function () {
+    document.getElementById("MAINBODYSTYLEOUT").style.display = "block"
+    document.getElementById("MAINBODYSTYLEOUT").style.zIndex = "0"
+    document.getElementById("MAINBODYSTYLEOUT").className = 'SlideAnimationBODYremove';
+    // document.getElementById("CropSetting").style.marginTop = "0rem"
+  }, 100);
+  setTimeout(function () {
+    // Theme toggle
+    const ThemeSetUP = document.getElementById("ThemeDevelopSETUP");
+    ThemeSetUP.style.opacity = "1"
+    ThemeSetUP.style.bottom = "58px"
+    ThemeSetUP.style.zIndex = "3";
+    document.getElementById('MainBottomNavbar').style.zIndex = "4";
+    document.getElementById("SearchBox").style.zIndex = "3"
+    document.getElementById("Backgro").style.opacity = "1"
+    document.getElementById("Backgro").style.visibility = "visible"
+    document.getElementById("Backgro").style.width = "100%"
+    // document.body.style.overflow = "hidden"
+    // language hide when click
+    document.getElementById("LanguageToggle").style.bottom = "-160px"
+    document.getElementById("LanguageToggle").style.opacity = "0"
+  }, 800);
+}
+
+function OpenLANGUAGEsecOnSettings() {
+    // close settings first when toggle settings
+    document.getElementById("CropSetting").style.marginTop = "70rem"
+    setTimeout(function () {
+      document.getElementById("MAINBODYSTYLEOUT").style.display = "block"
+      document.getElementById("MAINBODYSTYLEOUT").style.zIndex = "0"
+      document.getElementById("MAINBODYSTYLEOUT").className = 'SlideAnimationBODYremove';
+      // document.getElementById("CropSetting").style.marginTop = "0rem"
+    }, 100);
+    setTimeout(function () {
+      // Language toggle
+      document.getElementById("LanguageToggle").style.bottom = "58px"
+      document.getElementById("LanguageToggle").style.opacity = "1"
+      document.getElementById("SearchBox").style.opacity = "0"
+      // close theme when language proces
+      const ThemeSetUP = document.getElementById("ThemeDevelopSETUP");
+      ThemeSetUP.style.opacity = "0"
+      ThemeSetUP.style.bottom = "-240px"
+      document.getElementById("Backgro").style.opacity = "1"
+      document.getElementById("Backgro").style.visibility = "hidden"
+      document.getElementById("Backgro").style.width = "0px"
+    }, 830);
 }
 
 // ALERTCLICK()

@@ -28,3 +28,32 @@
     src: url(important/protofo-font-family-1712480080-0/protofo-bold.otf);
 }
 
+@font-face {
+    font-family: SFPRO;
+    src: url(./Font/SF-Pro-Display-Semibold.otf);
+}
+
+/* Thai font */
+
+@font-face {
+    font-family: LineSeedThin;
+    src: url(./Font/LINESeedSansTH_Th.ttf);
+}
+
+@font-face {
+    font-family: LineSeedRegular;
+    src: url(./Font/LINESeedSansTH_Rg.ttf);
+}
+
+@font-face {
+    font-family: MiSANS;
+    src: url(./Font/MiSansThai-Semibold.otf);
+}
+
+/* MADIMI FOR THAI LANGUAGE */
+
+@font-face {
+    font-family: Arabica;
+    src: url(./Font/Arabica.otf);
+}
+

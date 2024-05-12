@@ -393,7 +393,7 @@ header {
 .header-lines-text {
     border-left: solid 6px #040404;
     padding-left: 1.5rem;
-    padding-bottom: 4.3rem;
+    padding-bottom: 3rem;
     position: absolute;
     transform: translateY(-20px);
 }
@@ -491,13 +491,13 @@ header {
 }
 
 .blue {
-    background-color: #fffbd1;
+    background-color: var(--SecColor);
     height: 100%;
     aspect-ratio: 16 / 10;
 }
 
 .green {
-    background-color: #f0ebb8;
+    background-color: var(--SecColor);
     height: 100%;
     aspect-ratio: 16 / 10;
 }
@@ -866,6 +866,12 @@ a:active {
     -webkit-text-stroke-width: 1px;
     width: 320px;
     color: #fff;
+}
+
+.AlertForPhoneFold {
+    font-size: 12px;
+    color: rgb(255, 251, 209);
+    margin-top: 1rem;
 }
 
 .Alert-links {

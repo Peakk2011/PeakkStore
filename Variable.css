@@ -40,15 +40,43 @@
 }
 
 [data-selected-theme="pink"] {
-  --color-background: #DFB2F4;
-  --color-text: #463546;
-  --color-accent: #F06EFC;
+  --color-background: #060f0f;
+  --color-text: #cef0d9;
+  --color-accent: #000;
+  --SecColor: #cef0d9;
+  --NavbarColor: rgba(0, 0, 0, 0.856);
+  --BackgroundProces: rgba(0, 0, 0, 0.808);
+  /* Button Diferent color check */
+  --button: #cef0d9; 
+  --button-color: #000; 
+    /* search */
+    --colorBackGround: #cef0d9;
+    --colorpureBackGround: #cef0d9;
+    --BorderColor: #cef0d9;
+    --Icon-color: #000;
+    /* Selecter */
+    --Seclecter: #cef0d9;
+    --SeclecterColor: #000;
 }
 
 [data-selected-theme="orange"] {
-  --color-background: #FA7D61;
-  --color-text: #1E1E24;
-  --color-accent: #F3601C;
+  --color-background: #171717;
+  --color-text: #fde5e7;
+  --color-accent: #000;
+  --SecColor: #fde5e7;
+  --NavbarColor: #111;
+  --BackgroundProces: rgba(0, 0, 0, 0.808);
+  /* Button Diferent color check */
+  --button: #fde5e7; 
+  --button-color: #000; 
+    /* search */
+    --colorBackGround: #fde5e7;
+    --colorpureBackGround: #fde5e7;
+    --BorderColor: #fde5e7;
+    --Icon-color: #000;
+    /* Selecter */
+    --Seclecter: #fde5e7;
+    --SeclecterColor: #000;
 }
 
 .menu-link {
@@ -137,11 +165,11 @@
   }
   
   button[data-theme]:first-of-type {
-    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    border-radius: 4px 0px 0px 4px;
   }
   
   button[data-theme]:last-of-type {
-    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    border-radius: 0px 4px 4px 0px;
   }
   
   button[data-theme][aria-pressed="true"] {

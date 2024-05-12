@@ -44,11 +44,42 @@
         <!-- SETTINGS -->
         <div class="SettingBlurBac"></div>
 
-        <div class="setting">
+        <div class="setting" id="SettingsMainContent">
             <div class="setting-content">
                 <div class="setting-text">
-                    <h1>Peakk Store Setting</h1>
-                    <a onclick="ClOSESettingsCheck()">CLOSE</a>
+                    <img src="./Image/Peakk-Logo//Mask group.png" alt=""> 
+                    <h1>Store Setting</h1>
+                    <a onclick="ClOSESettingsCheck()"><ion-icon name="close-outline"></ion-icon></a>
+                </div>
+                <div class="setting-search">
+                    <div class="search" id="SearchOnSetting">
+                        <input type="text" class="searchTerm" id="SearchINPUTOnSet" placeholder="Type here to search tools and settings.">
+                        <button type="submit" class="searchButton" id="SearchBTNOnSet">
+                            <ion-icon name="search-sharp"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+                <div class="settings-content">
+                    <!-- Settings Content -->
+                    <h1>Let's start with <img src="./Image/Peakk-Logo/Mask group.png" alt="">Settings</h1>
+                    <p>First one you're need to sign in or sign up if you dont have peakk store account because i'm need to know which product that you like or don't like if you not want to sign up or sign in you can continue as guest.</p>
+                    <div class="settingsContent-ButtonLoginCheck">
+                        <li><a href="#">Sign up</a></li>
+                        <li><a href="#" id="OutlineTEXTSETTING">Sign in</a></li>
+                        <li><a href="#" id="NotRecommendTEXTSETTING">Guest</a></li>
+                    </div>
+
+                    <div class="PrefesthemeSett">
+                        <h1>Select your prefes theme</h1>
+                        <p>Information theme on settings have only forest theme your theme settings that you select will occur on main page only.</p>
+                        <button id="SettingsButtonCheck" onclick="OpenThemeSecOnSettings()">Open Theme Selecter</button>
+                    </div>
+                    <!-- Language but class is same -->
+                    <div class="PrefesthemeSett" id="LanguageSettings">
+                        <h1>Select your language</h1>
+                        <!-- <p>Information theme on settings have only forest theme your theme settings that you select will occur on main page only.</p> -->
+                        <button onclick="OpenLANGUAGEsecOnSettings()" id="SettingsButtonCheck">Open Language Selecter</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -66,6 +97,7 @@
                     <p>I Know you use tablet,ipad or rotate the phone to landscape please turn to vertical side please
                         and computer device to open my website i recommend to let you go to my
                         website that is support computer device</p>
+                    <p class="AlertForPhoneFold">For Phone That folded for Galaxy Z Fold and any folded phone please turn your phone to normal continuous</p>
                 </div>
                 <div class="Alert-links">
                     <a href="#"><ion-icon name="arrow-forward-outline"></ion-icon>Go to desktop site</a>
@@ -216,7 +248,7 @@
                 <!-- On data theme color not true -->
                 <button data-theme="green" aria-pressed="true">Default</button>
                 <button data-theme="blue" aria-pressed="false">Light</button>
-                <button data-theme="pink" aria-pressed="false">Cream</button>
+                <button data-theme="pink" aria-pressed="false">Forest</button>
                 <button data-theme="orange" aria-pressed="false">Modern</button>
             </div>
         </div>
