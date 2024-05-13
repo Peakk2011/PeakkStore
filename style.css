@@ -906,3 +906,26 @@ a:active {
     opacity: 1;
   }
 
+/* Typeface section */
+
+.boxFont {
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.boxFont:active {
+    transform: scale(95%);
+    filter: blur(5px);
+}
+
+.FontContent {
+    background-color: var(--color-text);
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    border: solid 1px #222;
+}
+
+#LAST {
+    margin-bottom: 5rem;
+}

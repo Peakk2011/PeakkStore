@@ -304,3 +304,44 @@ function ALERTCLICK() {
 function OFFHOMESECURECheck() {
   document.getElementById("OVERLAYSETUP").style.display = "none"
 }
+
+// OPEN FUCTION LIKE <A>
+
+function FontSfproOpen() {
+  setTimeout(function () {
+    window.open("FontPage/Sfpro.html");
+  }, 300);
+}
+
+function FontSegoeOpen() {
+  setTimeout(function () {
+    window.open("FontPage/SegoeUi.html");
+  }, 300);
+}
+
+function FontHelveticaOpen() {
+  setTimeout(function () {
+    window.open("FontPage/Helveica.html");
+  }, 300);
+}
+
+function FontRobotoOpen() {
+  setTimeout(function () {
+    window.open("FontPage/Roboto.html");
+  }, 300);
+}
+
+function CloseFontSelecterCheck() {
+  document.getElementById("HTMLfontSelecter").style.visibility = "hidden";
+  document.getElementById("HTMLfontSelecter").style.opacity = "0";
+}
+
+function TypefaceSetupCheck() {
+  setTimeout(function () {
+    document.getElementById("HTMLfontSelecter").style.visibility = "visible";
+    document.getElementById("HTMLfontSelecter").style.opacity = "1";
+  }, 250);
+  document.getElementById("ToogleLinks").style.bottom = "-370px"
+  document.getElementById("MenuBlurToggleDirefent").style.bottom = "-100%"
+  document.getElementById('MainBottomNavbar').style.zIndex = "4";
+}
