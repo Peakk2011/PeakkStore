@@ -52,6 +52,10 @@ nav {
     align-items: center;
 }
 
+.navbar-logo:active {
+    transform: translateX(20px);
+}
+
 .navbar-logo h1 {
     color: var(--SecColor);
     font-family: Segoe Ui Variable;
@@ -62,7 +66,7 @@ nav {
 
 .navbar-logo ion-icon {
     margin-right: 0.5rem;
-    transform: translateY(1px);
+    transform: translateY(4px);
 }
 
 .toggle li {

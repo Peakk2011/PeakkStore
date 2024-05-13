@@ -309,25 +309,25 @@ function OFFHOMESECURECheck() {
 
 function FontSfproOpen() {
   setTimeout(function () {
-    window.open("FontPage/Sfpro.html");
+    window.open("FontPage/Sfpro.html", "_parent");
   }, 300);
 }
 
 function FontSegoeOpen() {
   setTimeout(function () {
-    window.open("FontPage/SegoeUi.html");
+    window.open("FontPage/SegoeUi.html", "_parent");
   }, 300);
 }
 
 function FontHelveticaOpen() {
   setTimeout(function () {
-    window.open("FontPage/Helveica.html");
+    window.open("FontPage/Helveica.html", "_parent");
   }, 300);
 }
 
 function FontRobotoOpen() {
   setTimeout(function () {
-    window.open("FontPage/Roboto.html");
+    window.open("FontPage/Roboto.html", "_parent");
   }, 300);
 }
 

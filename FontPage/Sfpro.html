@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,11 +28,13 @@
     <link rel="stylesheet" href="../Font.css">
     <link rel="stylesheet" href="Navbar.css">
     <link rel="stylesheet" href="../Variable.css">
+    <link rel="stylesheet" href="ConfigPage.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
+
 <body>
-    
+
     <!-- SecureWhenPCUseruse -->
 
     <div class="Background-Alert">
@@ -43,7 +46,8 @@
                     <p>I Know you use tablet,ipad or rotate the phone to landscape please turn to vertical side please
                         and computer device to open my website i recommend to let you go to my
                         website that is support computer device</p>
-                    <p class="AlertForPhoneFold">For Phone That folded for Galaxy Z Fold and any folded phone please turn your phone to normal continuous</p>
+                    <p class="AlertForPhoneFold">For Phone That folded for Galaxy Z Fold and any folded phone please
+                        turn your phone to normal continuous</p>
                 </div>
                 <div class="Alert-links">
                     <a href="#"><ion-icon name="arrow-forward-outline"></ion-icon>Go to desktop site</a>
@@ -57,8 +61,8 @@
 
     <nav id="NavbarVeryMainNo">
         <div class="navbar">
-            <div class="navbar-logo">
-                <h1><ion-icon name="bag-handle-sharp"></ion-icon>Peakk Store</h1>
+            <div class="navbar-logo" onclick="ExitFromFontPage()">
+                <h1><ion-icon name="chevron-back-sharp"></ion-icon>Peakk Store</h1>
             </div>
             <div class="navbar-links">
                 <button id="myBtn" class="css-only-ripple">&#9776;</button>
@@ -92,6 +96,49 @@
 
     <div class="BackgroundBlur" id="Backgro"></div>
 
+    <!-- Content -->
+
+    <header>
+        <div class="headercontent">
+            <div class="headerText">
+                <div class="headerIntroductext" onclick="ExitToMainPage()">
+                    <h2><ion-icon name="bag-handle-sharp"></ion-icon>Typeface & Font</h2>
+                    <div class="headerSuggessFonts">
+                        <button>See all<ion-icon name="chevron-forward-sharp"></ion-icon></button>
+                    </div>
+                </div>
+                <h1>Aa</h1>
+                <h2>SF San francisco</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aliquid quia assumenda natus eos
+                    totam? Ratione, omnis. Recusandae, magnam officiis.</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="FontDownloadRecommend">
+        <div class="Fontdown">
+            <h1>SF San francisco</h1><a href="../Font/SF-Pro-Display-Semibold.otf" download="">Download</a>
+        </div>
+    </div>
+
+    <div class="FontLanguage">
+        <div class="FontLangAsk">
+            <h1>Do you think the SF San Francisco font has a Thai language?</h1>
+            <hr>
+            <div class="fontLanguageLinks">
+                <div class="FontSuggessLinks">
+                    <a href="../Font/SFThonburi-Regular.ttf" download=""><ion-icon name="download-outline"></ion-icon>Donwload SF Thonburi</a>
+                </div>
+                <div class="FontFileSize">
+                    <a href="../Font/SFThonburi-Regular.ttf" download="">TTF 1.97MB</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="Navbar.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
