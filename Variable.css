@@ -40,39 +40,39 @@
 }
 
 [data-selected-theme="pink"] {
-  --color-background: #060f0f;
-  --color-text: #cef0d9;
+  --color-background: #FCFDF0;
+  --color-text: #f0f2e2;
   --color-accent: #000;
-  --SecColor: #cef0d9;
-  --NavbarColor: rgba(0, 0, 0, 0.856);
-  --BackgroundProces: rgba(0, 0, 0, 0.808);
-  /* Button Diferent color check */
-  --button: #cef0d9; 
-  --button-color: #000; 
-    /* search */
-    --colorBackGround: #cef0d9;
-    --colorpureBackGround: #cef0d9;
-    --BorderColor: #cef0d9;
-    --Icon-color: #000;
+  --SecColor: #000;
+  --NavbarColor: rgba(252, 253, 240, 1);
+  --BackgroundProces: rgba(240, 242, 226, 0.248);
+    /* Button Diferent color check */
+  --button: #000; 
+  --button-color: #fff; 
+  /* search */
+  --colorBackGround: #fffde6;
+  --colorpureBackGround: #000;
+  --BorderColor: #000;
+  --Icon-color: #fff;
     /* Selecter */
-    --Seclecter: #cef0d9;
-    --SeclecterColor: #000;
+  --Seclecter: #000;
+  --SeclecterColor: #ffffe9;
 }
 
 [data-selected-theme="orange"] {
-  --color-background: #171717;
-  --color-text: #fde5e7;
+  --color-background: #000;
+  --color-text: #eee;
   --color-accent: #000;
-  --SecColor: #fde5e7;
-  --NavbarColor: #111;
-  --BackgroundProces: rgba(0, 0, 0, 0.808);
+  --SecColor: #eee;
+  --NavbarColor: #0a0a0a;
+  --BackgroundProces: rgba(0, 0, 0, 0.911);
   /* Button Diferent color check */
-  --button: #fde5e7; 
+  --button: #eee; 
   --button-color: #000; 
     /* search */
-    --colorBackGround: #fde5e7;
-    --colorpureBackGround: #fde5e7;
-    --BorderColor: #fde5e7;
+    --colorBackGround: #eee;
+    --colorpureBackGround: #eee;
+    --BorderColor: #eee;
     --Icon-color: #000;
     /* Selecter */
     --Seclecter: #fde5e7;
