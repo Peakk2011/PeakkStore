@@ -5,19 +5,20 @@
     font-family: system-ui;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.8s all;
     -webkit-tap-highlight-color: transparent;
-    -webkit-text-size-adjust:none;
-    -ms-text-size-adjust:none;
-    -moz-text-size-adjust:none;
-    text-size-adjust:none;
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    text-size-adjust: none;
 }
 
-body,html {
+body,
+html {
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.8s all;
     -webkit-tap-highlight-color: transparent;
-    -webkit-text-size-adjust:none;
-    -ms-text-size-adjust:none;
-    -moz-text-size-adjust:none;
-    text-size-adjust:none;
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    text-size-adjust: none;
 }
 
 #MAINBODYSTYLEOUT {
@@ -186,7 +187,7 @@ button:active {
 .language {
     position: fixed;
     height: 160px;
-  background-color: var(--NavbarColor);
+    background-color: var(--NavbarColor);
     backdrop-filter: blur(50px);
     /* bottom: 58px; */
     bottom: -160px;
@@ -305,9 +306,9 @@ button:active {
     display: flex;
     margin: 0 auto;
     margin-bottom: 1.5rem;
-  }
-  
-  .searchTerm {
+}
+
+.searchTerm {
     width: 100%;
     margin: 0 auto;
     border: none;
@@ -320,30 +321,30 @@ button:active {
     background: transparent;
     border: solid 1px var(--BorderColor);
     padding-left: 1rem;
-  }
+}
 
-  .searchTerm::placeholder {
+.searchTerm::placeholder {
     color: var(--SecColor);
     font-family: Segoe ui variable;
     font-weight: 300;
     -webkit-text-stroke-width: 0.6px;
-  }
-  
-  .searchTerm:focus{
+}
+
+.searchTerm:focus {
     color: var(--SecColor);
-  }
-  
-  .searchButton {
+}
+
+.searchButton {
     width: 50px;
     height: 36px;
-   border: solid 1px var(--BorderColor);
+    border: solid 1px var(--BorderColor);
     background: var(--colorpureBackGround);
     text-align: center;
     color: var(--Icon-color);
     /* border-radius: 0 2px 2px 0; */
     cursor: pointer;
     font-size: 20px;
-  }
+}
 
 header {
     position: relative;
@@ -359,7 +360,7 @@ header {
 .headernav-con {
     display: flex;
     width: 300px;
-    margin: 0 auto;   
+    margin: 0 auto;
     align-items: center;
     justify-content: space-between;
 }
@@ -395,7 +396,7 @@ header {
 .Headernav-text-logo-href-links-on-secound-navbar-before-mainNavbar-begin li a ion-icon {
     font-size: 22px;
     left: 0;
-    transform: translate(-8px,3px);
+    transform: translate(-8px, 3px);
 }
 
 .header-content {
@@ -493,35 +494,150 @@ header {
     font-size: 14px;
 }
 
-.Slider {
+
+.wrapper {
+    position: relative;
+    margin-bottom: 3rem;
+    margin-left: 1.5rem;
+}
+
+.wrapper:before,
+.wrapper:after {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    content: "";
+    display: block;
+    width: 13px;
+    height: 100%;
+}
+
+.wrapper:before {
+    left: 0;
+    background: linear-gradient(90deg, #0c0c0c, transparent);
+}
+
+.wrapper:after {
+    right: 0;
+    background: linear-gradient(-90deg, #0c0c0c, transparent);
+}
+
+.items {
+    position: relative;
     width: 100%;
-    aspect-ratio: 16 / 10;
-    margin: auto;
-    overflow-x: scroll;
-    overflow-y: hidden;
+    overflow: hidden;
     white-space: nowrap;
-    scroll-snap-type: x mandatory;
-    border-radius: 4px;
-    margin-bottom: 4rem;
+    font-size: 0;
+    cursor: pointer;
 }
 
-.blue {
-    background-color: var(--SecColor);
-    height: 100%;
-    aspect-ratio: 16 / 10;
+.items.active {
+    cursor: grab;
 }
 
-.green {
-    background-color: var(--SecColor);
-    height: 100%;
-    aspect-ratio: 16 / 10;
-}
-
-.blue,
-.green {
+.item {
     display: inline-block;
-    margin-right: 25px;
-    scroll-snap-align: center;
+    margin-right: 20px;
+    user-select: none;
+    background: var(--SecColor);
+    width: 70%;
+    height: 170px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.item:last-child {
+    margin-right: 20px;
+}
+
+@media screen and (min-width: 500px) {
+    .item {
+        width: 33%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .item {
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .wrapper {
+        margin-left: -20px;
+    }
+
+    .item {
+        width: 20%;
+    }
+}
+
+/* Background */
+
+#Bg1 {
+    background: url(./PageText/PageText.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#Bg2 {
+    background: url(./PageText/PageText\ \(1\).png);
+    background-position: center;
+    background-size: cover;
+}
+
+#Bg3 {
+    background: url(./PageText/PageText\ \(2\).png);
+    background-position: center;
+    background-size: cover;
+}
+
+#Bg4 {
+    background: url(./PageText/PageText\ \(3\).png);
+    background-position: center;
+    background-size: cover;
+}
+
+#Bg5 {
+    background: url(./PageText/PageText\ \(4\).png);
+    background-position: center;
+    background-size: cover;
+}
+
+#Bg6 {
+    background: url(./PageText/PageText\ \(5\).png);
+    background-position: center;
+    background-size: cover;
+}
+
+#Bg7 {
+    background: url(./PageText/PageText\ \(6\).png);
+    background-position: center;
+    background-size: cover;
+}
+
+#Bg8 {
+    background: url(./PageText/PageText\ \(7\).png);
+    background-position: center;
+    background-size: cover;
+}
+
+#Bg9 {
+    background: url(./PageText/PageText\ \(8\).png);
+    background-position: center;
+    background-size: cover;
+}
+
+#Bg10 {
+    background: url(./PageText/PageText\ \(9\).png);
+    background-position: center;
+    background-size: cover;
+}
+
+#Bg11 {
+    background: url(./PageText/PageText\ \(10\).png);
+    background-position: center;
+    background-size: cover;
 }
 
 .signin-text-border h1 {
@@ -845,7 +961,7 @@ a:active {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 .Alert {
@@ -900,17 +1016,17 @@ a:active {
 
 /* REVEAL SCROLL ON ELEMENT */
 
-.reveal{
+.reveal {
     position: relative;
     transform: translateY(-60px);
     opacity: 0;
     transition: 1s all ease;
-  }
-  
-  .reveal.active{
+}
+
+.reveal.active {
     transform: translateY(0);
     opacity: 1;
-  }
+}
 
 /* Typeface section */
 

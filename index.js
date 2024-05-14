@@ -87,14 +87,22 @@ function CloseLanguageSetup() {
 
 function changeCss() {
   var navElement = document.querySelector("nav"); //after >
-  this.scrollY > 450 ? navElement.style.opacity = 1 : navElement.style.opacity = 0;
+  this.scrollY > 300 ? navElement.style.top = "0px" : navElement.style.top = "-70px";
 
   var navElement = document.getElementById("SearchBox"); //after >
-  this.scrollY > 450 ? navElement.style.top = "58px" : navElement.style.opacity = "0"
+  this.scrollY > 300 ? navElement.style.top = "58px" : navElement.style.opacity = "0"
 
   var HeaderPall = document.querySelector("header"); //after >
-  this.scrollY > 350 ? HeaderPall.style.opacity = 0 : HeaderPall.style.opacity = 1;
+  this.scrollY > 200 ? HeaderPall.style.opacity = 0 : HeaderPall.style.opacity = 1;
 
+  var SliderPall = document.querySelector(".wrapper"); //after >
+  this.scrollY > 600 ? SliderPall.style.opacity = 0 : SliderPall.style.opacity = 1;
+
+  var SigninSection = document.querySelector(".SignIn"); //after >
+  this.scrollY > 1000 ? SigninSection.style.opacity = 0 : SigninSection.style.opacity = 1;
+
+  var TextSuggess = document.getElementById("TextNub2Suggess"); //after >
+  this.scrollY > 1100 ? TextSuggess.style.opacity = 0 : TextSuggess.style.opacity = 1;
 }
 
 function ThemeSetupCheck() {
@@ -358,3 +366,43 @@ var currentScrollPos = window.pageYOffset;
   }
   prevScrollpos = currentScrollPos;
 }
+
+// slider
+
+let isDown = false;
+let startX;
+let scrollLeft;
+const slider = document.querySelector('.items');
+
+const end = () => {
+	isDown = false;
+  slider.classList.remove('active');
+}
+
+const start = (e) => {
+  isDown = true;
+  slider.classList.add('active');
+  startX = e.pageX || e.touches[0].pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;	
+}
+
+const move = (e) => {
+	if(!isDown) return;
+
+  e.preventDefault();
+  const x = e.pageX || e.touches[0].pageX - slider.offsetLeft;
+  const dist = (x - startX);
+  slider.scrollLeft = scrollLeft - dist;
+}
+
+(() => {
+	slider.addEventListener('mousedown', start);
+	slider.addEventListener('touchstart', start);
+
+	slider.addEventListener('mousemove', move);
+	slider.addEventListener('touchmove', move);
+
+	slider.addEventListener('mouseleave', end);
+	slider.addEventListener('mouseup', end);
+	slider.addEventListener('touchend', end);
+})();
