@@ -330,7 +330,7 @@ button:active {
   }
   
   .searchTerm:focus{
-    color: #fffbd1;
+    color: var(--SecColor);
   }
   
   .searchButton {
@@ -558,7 +558,7 @@ header {
 
 .sign-text {
     border-right: solid 6px #000;
-    padding-bottom: 3.7rem;
+    padding-bottom: 2.4rem;
 }
 
 .signin-text-border {
@@ -655,17 +655,6 @@ header {
     position: relative;
     border-radius: 4px;
 }
-
-.product-link a img {
-    width: 36.67px;
-    height: 36.5px;
-    transform: translateY(-8px);
-    left: 145px;
-    position: absolute;
-    border-radius: 4px;
-}
-
-
 
 /* button google */
 
