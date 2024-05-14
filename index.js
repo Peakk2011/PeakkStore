@@ -345,3 +345,16 @@ function TypefaceSetupCheck() {
   document.getElementById("MenuBlurToggleDirefent").style.bottom = "-100%"
   document.getElementById('MainBottomNavbar').style.zIndex = "4";
 }
+
+// Hide bottomNavbar when scroll
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("MainBottomNavbar").style.bottom = "0";
+  } else {
+    document.getElementById("MainBottomNavbar").style.bottom = "-60px";
+  }
+  prevScrollpos = currentScrollPos;
+}
