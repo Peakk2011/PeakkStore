@@ -5,6 +5,10 @@
     font-family: system-ui;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.8s all;
     -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust:none;
+    -ms-text-size-adjust:none;
+    -moz-text-size-adjust:none;
+    text-size-adjust:none;
 }
 
 body,html {
@@ -388,6 +392,7 @@ header {
     background: var(--color-text);
     backdrop-filter: blur(20px);
     height: 400px;
+    border-radius: 0px 0px 8px 8px;
 }
 
 .header-lines-text {
@@ -529,6 +534,7 @@ header {
     backdrop-filter: blur(20px);
     height: 400px;
     position: relative;
+    border-radius: 8px;
 }
 
 .signin-content {
@@ -588,6 +594,7 @@ header {
     background: var(--color-text);
     backdrop-filter: blur(20px);
     height: 400px;
+    border-radius: 8px;
 }
 
 .product {
