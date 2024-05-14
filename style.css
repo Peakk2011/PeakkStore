@@ -13,6 +13,11 @@
 
 body,html {
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.8s all;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust:none;
+    -ms-text-size-adjust:none;
+    -moz-text-size-adjust:none;
+    text-size-adjust:none;
 }
 
 #MAINBODYSTYLEOUT {
@@ -142,6 +147,7 @@ button:active {
     position: fixed;
     z-index: 4;
     top: 0;
+    border-radius: 0px 8px 8px 0px;
     /* right: 0;  for who want to get sidebar to right side*/
 }
 
@@ -161,7 +167,11 @@ button:active {
     display: flex;
     margin: 0 auto;
     width: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
     justify-content: space-between;
+    z-index: 20;
 }
 
 .buttomNavContent li a {
