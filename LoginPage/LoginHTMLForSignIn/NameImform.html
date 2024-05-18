@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Username</title>
+    <link rel="stylesheet" href="../Login.css">
+    <link rel="stylesheet" href="../../Font.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <div class="content" id="Content">
+        <div class="login">
+            <div class="login-text">
+                <img src="../../Image/Peakk-Logo/LightMode.png" alt="">
+                <h1>Username</h1>
+                <ion-icon name="chevron-forward-outline" onclick="OpenAnotherLinksPass()"></ion-icon>
+            </div>
+            <div class="loginSuggess">
+                <h1>What you're name tell me?<br><h1 id="Highlight">Let's Enter a Name</h1></h1>
+            </div>
+            <hr>
+            <div class="login-content">
+                <div class="loginContentForm">
+                    <input type="name" placeholder="Example John" name="uname" required>
+                </div>
+                <!-- Ask -->
+                <div class="askingSignIn">
+                    <a href="#">Have a account already?</a>
+                    <a href="password.html">Forget You're name let enter password</a>
+                </div>
+                <!-- finish button -->
+                <div class="Finish">
+                    <div class="FinBtn">
+                        <a href="./SignIn.html" id="BackIdNotColor">Back</a>
+                        <a onclick="OpenAnotherLinksPass()">Next</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../Login.js"></script>
+</body>
+
+</html>

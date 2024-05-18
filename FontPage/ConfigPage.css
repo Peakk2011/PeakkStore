@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     color: var(--SecColor);
+    overflow-y: scroll;
 }
 
 header {
@@ -148,4 +149,18 @@ header {
 
 .FontFileSize a {
     font-size: 14px;
+}
+
+@media only screen and (min-width: 365px) {
+    .FontDownloadRecommend {
+        width: 340px;
+        margin: 0 auto;
+        border-radius: 6px;
+    }
+    .buttonnav {
+        width: 340px;
+        left: 50%;
+        transform: translate(-50%,-12px);
+        border-radius: 6px;
+    }
 }

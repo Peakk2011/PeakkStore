@@ -78,6 +78,7 @@ function LanguageSetup() {
   document.getElementById("Backgro").style.opacity = "1"
   document.getElementById("Backgro").style.visibility = "hidden"
   document.getElementById("Backgro").style.width = "0px"
+  document.getElementById("MainBottomNavbar").style.bottom = "0"
 }
 
 function CloseLanguageSetup() {
@@ -120,6 +121,7 @@ function ThemeSetupCheck() {
   document.getElementById("LanguageToggle").style.bottom = "-160px"
   document.getElementById("LanguageToggle").style.opacity = "0"
   MenuLinksCloseCheck()
+  document.getElementById("MainBottomNavbar").style.bottom = "0"
 }
 
 function ThemeCloseCheck() {
@@ -146,6 +148,7 @@ function MenuLinksSetup() {
   document.getElementById("MenuBlurToggleDirefent").style.bottom = "0"
   document.getElementById('MainBottomNavbar').style.zIndex = "12";
   ThemeCloseCheck()
+  document.getElementById("MainBottomNavbar").style.bottom = "0"
 }
 
 function MenuLinksCloseCheck() {
@@ -360,11 +363,18 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
 var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    document.getElementById("MainBottomNavbar").style.bottom = "0";
+    document.getElementById("MainBottomNavbar").style.bottom = "0"
   } else {
     document.getElementById("MainBottomNavbar").style.bottom = "-60px";
   }
   prevScrollpos = currentScrollPos;
+}
+
+function OpenBottomNavbarClickCheck() {
+  setTimeout(function () {
+    document.getElementById("MainBottomNavbar").style.bottom = "30px"
+  }, 250);
+    document.getElementById("MainBottomNavbar").style.bottom = "-60px";
 }
 
 // slider
