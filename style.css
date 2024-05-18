@@ -20,6 +20,7 @@ html {
     -moz-text-size-adjust: none;
     text-size-adjust: none;
     overflow-x: hidden;
+    touch-action: manipulation;
 }
 
 #MAINBODYSTYLEOUT {
