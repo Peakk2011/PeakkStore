@@ -6,7 +6,7 @@ function OpenAnotherLinksUser() {
     setTimeout(function () {
         window.open("Username.html", "_parent");
         Content.classList.remove("AddClassAnimationExit");
-    }, 400);
+    }, 260);
 }
 
 function OpenAnotherLinksPass() {
@@ -15,7 +15,7 @@ function OpenAnotherLinksPass() {
     setTimeout(function () {
         window.open("passwordCheck.html", "_parent");
         Content.classList.remove("AddClassAnimationExit");
-    }, 400);
+    }, 260);
 }
 
 function OpenAnotherLinksConPass() {
@@ -23,5 +23,5 @@ function OpenAnotherLinksConPass() {
     Content.classList.add('AddClassAnimationExit');
     setTimeout(function () {
         window.open("ConfirmPassCheck.html", "_parent");
-    }, 400);
+    }, 260);
 }
