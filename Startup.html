@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeakkStore</title>
+</head>
+
+<body>
+
+    <style>
+        button {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            border: solid 1px #eee;
+            padding: 0.6rem 1.5rem;
+            background-color: transparent;
+            color: #fff;
+            border-radius: 8px;
+        }
+        button:active {
+            filter: blur(20px);
+        }
+        body {
+            background-color: #0c0c0c;
+        }
+    </style>
+
+    <button onclick="OpenWindow()">Open Peakk store</button>
+
+    <script>
+        let myWindow;
+
+        function OpenWindow() {
+            myWindow = window.open("index.html", "_blank", "toolbar=no,scrollbars=no,resizable=no,top=50%,left=50%,width=420,height=840");
+        }
+
+        n.onclick = OpenWindow()
+    </script>
+</body>
+
+</html>

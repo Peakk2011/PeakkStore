@@ -36,6 +36,15 @@ function GetToggleOUST() {
 //     document.getElementById("NavbarVeryMainNo").style.top = ('0px')
 // }
 
+// alert click to site
+
+let myWindow;
+
+function OpenWindow() {
+    myWindow = window.open("index.html", "_blank", "toolbar=no,scrollbars=no,resizable=no,top=50%,left=50%,width=420,height=840");
+}
+
+
 function GetSearchOn() {
   document.getElementById("SearchBox").style.top = "0px"
   document.getElementById("SearchBox").style.opacity = "1"

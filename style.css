@@ -39,7 +39,6 @@ body {
     overflow: hidden;
     background-color: var(--color-background);
     background: --color-background;
-    background-size: 200%;
     overflow: hidden;
 }
 
