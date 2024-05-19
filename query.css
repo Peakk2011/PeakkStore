@@ -11,6 +11,12 @@
     .header-content {
         border-radius: 0px 0px 4px 4px;
     }
+    .SignIn {
+        border-radius: 4px;
+    }
+    .item {
+        border-radius: 4px;  
+    }
     header {
         transform: translateY(2rem);
         margin-bottom: 2rem;

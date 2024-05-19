@@ -1,11 +1,3 @@
-document.addEventListener('touchmove', function (event) {
-  if (event.scale !== 1) { event.preventDefault(); }
-}, { passive: false });
-
-document.addEventListener('dblclick', (event) => {
-  event.preventDefault()
-}, { passive: false });
-
 const ButtonToggle = document.getElementById("myBtn");
 const GetNAVOUTNOW = document.getElementById("TurnNavOFF");
 
@@ -424,3 +416,4 @@ const move = (e) => {
 	slider.addEventListener('mouseup', end);
 	slider.addEventListener('touchend', end);
 })();
+

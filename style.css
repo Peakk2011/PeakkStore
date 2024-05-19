@@ -40,6 +40,7 @@ body {
     background-color: var(--color-background);
     background: --color-background;
     background-size: 200%;
+    overflow: hidden;
 }
 
 :where(li, a) {
@@ -1047,7 +1048,6 @@ a:active {
     background-color: var(--color-text);
     padding: 0.8rem 1rem;
     border-radius: 5px;
-    border: solid 1px #222;
 }
 
 #LAST {

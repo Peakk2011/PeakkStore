@@ -1,0 +1,36 @@
+.callout {
+    z-index: 8;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+}
+
+.calloutTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+.calloutTitle h1 {
+    color: var(--SecColor);
+    font-size: 26px;
+    font-family: madimione;
+    font-weight: 300;
+}
+
+.callmess {
+    padding: 0.5rem 0rem;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.callText p {
+    color: var(--SecColor);
+    font-family: Segoe ui variable;
+    font-weight: 300;
+    -webkit-text-stroke-width: 0.5px;
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
