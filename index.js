@@ -88,6 +88,7 @@ function LanguageSetup() {
   document.getElementById("Backgro").style.visibility = "hidden"
   document.getElementById("Backgro").style.width = "0px"
   document.getElementById("MainBottomNavbar").style.bottom = "0"
+  MenuLinksCloseCheck()
 }
 
 function CloseLanguageSetup() {
@@ -158,6 +159,7 @@ function MenuLinksSetup() {
   document.getElementById('MainBottomNavbar').style.zIndex = "12";
   ThemeCloseCheck()
   document.getElementById("MainBottomNavbar").style.bottom = "0"
+  CloseLanguageSetup()
 }
 
 function MenuLinksCloseCheck() {
