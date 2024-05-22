@@ -58,6 +58,7 @@
 
 .header-text h1 {
     font-family: LineSeed;
+    width: 70%;
 }
 
 .header-text li a {
@@ -78,6 +79,7 @@
 .signin-text-border h1 {
     font-family: LineSeed;
     -webkit-text-stroke-width: 0.9px;
+    width: 80%;
 }
 
 .Flex-link-btn li a {
@@ -243,4 +245,8 @@ button[data-theme] {
     font-size: 14px;
     padding: 0.7rem 0px;
     -webkit-text-stroke-width: 0.5px;
+}
+
+.header-lines-text {
+    transform: translateY(-26px);
 }

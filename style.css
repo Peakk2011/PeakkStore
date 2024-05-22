@@ -163,7 +163,7 @@ button:active {
     bottom: 0;
     display: flex;
     align-items: center;
-    z-index: 2;
+    z-index: 22;
 }
 
 .buttomNavContent {
@@ -174,7 +174,7 @@ button:active {
     transform: translateX(-50%);
     position: fixed;
     justify-content: space-between;
-    z-index: 20;
+    z-index: 24;
 }
 
 .buttomNavContent li a {
@@ -442,6 +442,7 @@ header {
     font-family: Segoe Ui Variable;
     -webkit-text-stroke-width: 1px;
     line-height: 1.2;
+    width: 90%;
 }
 
 
@@ -649,6 +650,7 @@ header {
     line-height: 1.1;
     -webkit-text-stroke-width: 1.6px;
     font-size: 30px;
+    width: 70%;
 }
 
 .signin-text-border ion-icon {
@@ -943,7 +945,7 @@ a:active {
 
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 800px) {
     .Background-Alert {
         display: none;
     }

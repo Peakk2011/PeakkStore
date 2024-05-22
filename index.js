@@ -121,7 +121,7 @@ function ThemeSetupCheck() {
   ThemeSetUP.style.opacity = "1"
   ThemeSetUP.style.bottom = "58px"
   ThemeSetUP.style.zIndex = "3";
-  document.getElementById('MainBottomNavbar').style.zIndex = "4";
+  document.getElementById('MainBottomNavbar').style.zIndex = "24";
   document.getElementById("SearchBox").style.zIndex = "3"
   document.getElementById("Backgro").style.opacity = "1"
   document.getElementById("Backgro").style.visibility = "visible"
