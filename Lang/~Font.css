@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: thonburi-bold;
+}
+
+@font-face {
+    font-family: Arabica;
+    src: url(../Font/Arabica.otf);
+}
+
+@font-face {
+    font-family: LineSeed;
+    src: url(../Font/LINESeedSansTH_Rg.ttf);
+}
+
+@font-face {
+    font-family: LineSeed-thin;
+    src: url(../Font/LINESeedSansTH_Th.ttf);
+}
+
+@font-face {
+    font-family: thonburi;
+    src: url(../Font/SFThonburi-Regular.ttf);
+}
+
+@font-face {
+    font-family: thonburi-Semibold;
+    src: url(../Font/SFThonburi-Semibold.ttf);
+}
+
+@font-face {
+    font-family: thonburi-bold;
+    src: url(../Font/SFThonburi-Bold.ttf);
+}
+
+@font-face {
+    font-family: MiSans-bold;
+    src: url(../Font/MiSansThai-Semibold.otf);
+}
+
+@font-face {
+    font-family: MiSans;
+    src: url(../Font/MiSansThai.otf);
+}
