@@ -19,7 +19,6 @@ html {
     -ms-text-size-adjust: none;
     -moz-text-size-adjust: none;
     text-size-adjust: none;
-    overflow-x: hidden;
     touch-action: manipulation;
 }
 

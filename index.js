@@ -19,6 +19,15 @@ function GetToggleON() {
   document.getElementById("SearchBox").style.top = "-140px"
 }
 
+function ThisToggleOnSlideOUT() {
+  document.getElementById("GetNavOnNow").style.display = ('none')
+  document.getElementById("MainNavSideOFF").style.transform = "translateX(-310px)"
+  ButtonToggle.style.display = ("block")
+  document.getElementById("Backgro").style.opacity = "1"
+  document.getElementById("Backgro").style.visibility = "hidden"
+  document.getElementById("Backgro").style.width = "0px"
+}
+
 function GetToggleOUST() {
   document.getElementById("GetNavOnNow").style.display = ('none')
   document.getElementById("MainNavSideOFF").style.transform = "translateX(-310px)"
@@ -114,7 +123,19 @@ function changeCss() {
 
   var TextSuggess = document.getElementById("TextNub2Suggess"); //after >
   this.scrollY > 1100 ? TextSuggess.style.opacity = 0 : TextSuggess.style.opacity = 1;
+
+  var SidebarScrollX = document.getElementById("MainNavSideOFF");
+  this.scrollX > 2 ? GetToggleON() : ThisToggleOnSlideOUT();
 }
+
+window.addEventListener("scroll", changeCss, false);
+
+// function CssScrollX () {
+//   var SidebarScrollX = document.getElementById("MainNavSideOFF");
+//   this.scrollX > 2 ? GetToggleON() : GetToggleOUST();
+// }
+
+// window.addEventListener("scroll", CssScrollX , false);
 
 function ThemeSetupCheck() {
   const ThemeSetUP = document.getElementById("ThemeDevelopSETUP");
@@ -170,7 +191,6 @@ function MenuLinksCloseCheck() {
 
 changeCss()
 
-window.addEventListener("scroll", changeCss, false);
 
 function BeginNavHid() {
   document.getElementById('MainNavSideOFF').style.display = ('none')
