@@ -66,6 +66,8 @@
                 <h1><ion-icon name="chevron-back-sharp"></ion-icon>Peakk Store</h1>
             </div>
             <div class="navbar-links">
+                <button onclick="ThemeSetupCheck()"><ion-icon name="color-fill-outline"></ion-icon></button>
+                <button><ion-icon name="language-outline"></ion-icon></button>
                 <button id="myBtn" class="css-only-ripple">&#9776;</button>
             </div>
         </div>
@@ -75,12 +77,13 @@
         <div class="toggle" id="GetNavOnNow">
             <h1><ion-icon name="bag-handle-sharp"></ion-icon>Peakk Store</h1>
             <li id="TurnNavOFF" style="cursor: pointer;"><a><ion-icon name="exit-outline"></ion-icon>Exit</a></li>
-            <li><a href="#"><ion-icon name="add-outline"></ion-icon>Website</a></li>
-            <li><a href="#"><ion-icon name="add-outline"></ion-icon>Website</a></li>
-            <li><a href="#"><ion-icon name="add-outline"></ion-icon>Website</a></li>
-            <li><a href="#"><ion-icon name="add-outline"></ion-icon>Website</a></li>
-            <li><a href="#"><ion-icon name="add-outline"></ion-icon>Website</a></li>
-            <li><a onclick="logout()"><ion-icon name="add-outline"></ion-icon>Logout</a></li>
+            <li><a href="../index.html"><ion-icon name="home-outline"></ion-icon>home Page</a></li>
+            <li><a onclick="ThemeSetupCheck()"><ion-icon name="color-fill-outline"></ion-icon>Theme</a></li>
+            <li><a ><ion-icon name="language-outline"></ion-icon>Language</a></li>
+            <hr>
+            <li><a href="Sfpro.html"><ion-icon name="add-outline"></ion-icon>San Francisco</a></li>
+            <li><a href="Roboto.html"><ion-icon name="add-outline"></ion-icon>Roboto</a></li>
+            <li><a href="Helveica.html"><ion-icon name="add-outline"></ion-icon>Helvetica</a></li>
         </div>
     </div>
 
@@ -96,6 +99,27 @@
     </div>
 
     <div class="BackgroundBlur" id="Backgro"></div>
+
+    <div class="BGFocus" id="BGThemeFoc"></div>
+    <!-- Theme Toggle -->
+    <div class="ThemeElement" id="ThemeDevelopSETUP">
+        <div class="ThemeTextElementSpc">
+            <div class="ThemeSelecter-text">
+                <h1><ion-icon name="person-sharp"></ion-icon>Theme Switcher</h1>
+                <a href="javascript:void(0)" class="closebtn" onclick="ThemeCloseCheck()">&times;</a>
+            </div>
+            <p>This is theme switcher<br>on bottom side thay have option that select your prefes theme there have 4
+                color.</p>
+        </div>
+        <div class="theme-switcher">
+            <!-- Area pressed True = default -->
+            <!-- On data theme color not true -->
+            <button data-theme="green" aria-pressed="true">Default</button>
+            <button data-theme="blue" aria-pressed="false">Light</button>
+            <button data-theme="pink" aria-pressed="false">Natural</button>
+            <button data-theme="orange" aria-pressed="false">Solid</button>
+        </div>
+    </div>
 
     <!-- Content -->
 

@@ -22,7 +22,7 @@
 [data-selected-theme="blue"] {
   --color-background: #ffffe9;
   --color-text: #fffde6;
-  --color-accent: #000;
+  --color-accent: #fffde6;
   --SecColor: #000;
   --NavbarColor: rgba(255, 255, 233, 0.932);
   --BackgroundProces: rgba(255, 255, 255, 0.363);
@@ -42,7 +42,7 @@
 [data-selected-theme="pink"] {
   --color-background: #FCFDF0;
   --color-text: #f0f2e2;
-  --color-accent: #000;
+  --color-accent: #f0f2e2;
   --SecColor: #000;
   --NavbarColor: rgba(252, 253, 240, 1);
   --BackgroundProces: rgba(240, 242, 226, 0.248);
@@ -61,21 +61,21 @@
 
 [data-selected-theme="orange"] {
   --color-background: #000;
-  --color-text: #eee;
+  --color-text: #fff;
   --color-accent: #000;
-  --SecColor: #eee;
+  --SecColor: #fff;
   --NavbarColor: #0a0a0a;
   --BackgroundProces: rgba(0, 0, 0, 0.911);
   /* Button Diferent color check */
-  --button: #eee; 
+  --button: #fff; 
   --button-color: #000; 
     /* search */
-    --colorBackGround: #eee;
-    --colorpureBackGround: #eee;
-    --BorderColor: #eee;
+    --colorBackGround: #fff;
+    --colorpureBackGround: #fff;
+    --BorderColor: #fff;
     --Icon-color: #000;
     /* Selecter */
-    --Seclecter: #eee;
+    --Seclecter: #fff;
     --SeclecterColor: #000;
 }
 

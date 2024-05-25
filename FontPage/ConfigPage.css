@@ -3,11 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     color: var(--SecColor);
-    overflow-y: scroll;
 }
 
 header {
-    background-color: #000;
+    background-color: var(--color-accent);
     height: 400px;
 }
 
@@ -105,10 +104,11 @@ header {
     -webkit-text-stroke-width: 0.7px;
     font-size: 16px;
     font-family: Segoe ui variable;
-    color: var(--SecColor);
-    padding: 0.4rem 1rem;
-    border-radius: 3px;
-    background-color: #000;
+    color: var(--button-color);
+    padding: 0.45rem 1.3rem;
+    border-radius: 20px;
+    background-color: var(--button);
+    outline: solid 1px #000;
 }
 
 .FontLangAsk {
@@ -163,4 +163,40 @@ header {
         transform: translate(-50%,-12px);
         border-radius: 6px;
     }
+}
+
+.navbar-links {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar-links button {
+    background-color: transparent;
+    border: none;
+}
+
+.navbar-links button ion-icon {
+    font-size: 24px;
+    transform: translateY(3px);
+}
+
+.buttonnav {
+    display: none;
+}
+
+.toggle hr {
+    margin: 1rem 0;
+    margin-top: 1.5rem;
+    border: var(--SecColor) solid 1px;
+    width: 50%;
+}
+
+.BGFocus {
+    width: 0%;
+    height: 100vh;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    background-color: var(--NavbarColor);
+    z-index: 2;
+    position: absolute;
 }
