@@ -37,14 +37,15 @@
     /* Selecter */
   --Seclecter: #000;
   --SeclecterColor: #ffffe9;
+  --borderfont: #44444454;
 }
 
 [data-selected-theme="pink"] {
-  --color-background: #FCFDF0;
-  --color-text: #f0f2e2;
-  --color-accent: #f0f2e2;
+  --color-background: rgb(247, 255, 246);
+  --color-text: #edf8ed;
+  --color-accent: #edf8ed;
   --SecColor: #000;
-  --NavbarColor: rgba(252, 253, 240, 1);
+  --NavbarColor: rgba(237, 248, 237, 1);
   --BackgroundProces: rgba(240, 242, 226, 0.248);
     /* Button Diferent color check */
   --button: #000; 
@@ -60,23 +61,23 @@
 }
 
 [data-selected-theme="orange"] {
-  --color-background: #000;
-  --color-text: #fff;
-  --color-accent: #000;
-  --SecColor: #fff;
-  --NavbarColor: #0a0a0a;
-  --BackgroundProces: rgba(0, 0, 0, 0.911);
-  /* Button Diferent color check */
-  --button: #fff; 
-  --button-color: #000; 
-    /* search */
-    --colorBackGround: #fff;
-    --colorpureBackGround: #fff;
-    --BorderColor: #fff;
-    --Icon-color: #000;
+  --color-background: rgb(255, 255, 255);
+  --color-text: #F9F5EF;
+  --color-accent: #F9F5EF;
+  --SecColor: #000;
+  --NavbarColor: #F9F5EF;
+  --BackgroundProces: #fffdfb;
+    /* Button Diferent color check */
+  --button: #000; 
+  --button-color: #fff; 
+  /* search */
+  --colorBackGround: #fffde6;
+  --colorpureBackGround: #000;
+  --BorderColor: #000;
+  --Icon-color: #fff;
     /* Selecter */
-    --Seclecter: #fff;
-    --SeclecterColor: #000;
+  --Seclecter: #000;
+  --SeclecterColor: #ffffe9;
 }
 
 .menu-link {

@@ -580,66 +580,88 @@ header {
     background: url(./PageText/PageText.png);
     background-position: center;
     background-size: cover;
+    filter:grayscale(100%);
+    opacity: 100%;
 }
 
 #Bg2 {
     background: url(./PageText/PageText\ \(1\).png);
     background-position: center;
     background-size: cover;
+    filter:grayscale(100%);
+    opacity: 90%;
 }
 
 #Bg3 {
     background: url(./PageText/PageText\ \(2\).png);
     background-position: center;
     background-size: cover;
+    filter:grayscale(100%);
+    opacity: 70%;
 }
 
 #Bg4 {
     background: url(./PageText/PageText\ \(3\).png);
     background-position: center;
     background-size: cover;
+    filter:grayscale(100%);
+    opacity: 70%;
 }
 
 #Bg5 {
     background: url(./PageText/PageText\ \(4\).png);
     background-position: center;
     background-size: cover;
+    filter:grayscale(100%);
+    opacity: 70%;
 }
 
 #Bg6 {
     background: url(./PageText/PageText\ \(5\).png);
     background-position: center;
     background-size: cover;
+    filter:grayscale(100%);
+    opacity: 70%;
 }
 
 #Bg7 {
     background: url(./PageText/PageText\ \(6\).png);
     background-position: center;
     background-size: cover;
+    filter:grayscale(100%);
+    opacity: 70%;
 }
 
 #Bg8 {
     background: url(./PageText/PageText\ \(7\).png);
     background-position: center;
     background-size: cover;
+    filter:grayscale(100%);
+    opacity: 70%;
 }
 
 #Bg9 {
     background: url(./PageText/PageText\ \(8\).png);
     background-position: center;
     background-size: cover;
+    filter:grayscale(100%);
+    opacity: 70%;
 }
 
 #Bg10 {
     background: url(./PageText/PageText\ \(9\).png);
     background-position: center;
     background-size: cover;
+    filter:grayscale(100%);
+    opacity: 70%;
 }
 
 #Bg11 {
     background: url(./PageText/PageText\ \(10\).png);
     background-position: center;
     background-size: cover;
+    filter:grayscale(100%);
+    opacity: 70%;
 }
 
 .signin-text-border h1 {
@@ -1067,6 +1089,7 @@ a:active {
     background-color: var(--color-text);
     padding: 0.8rem 1rem;
     border-radius: 5px;
+    border: solid 1px var(--borderfont);
 }
 
 #LAST {

@@ -272,6 +272,10 @@ function setting() {
     document.getElementById("CropSetting").style.marginTop = "0rem"
   }, 160);
   document.getElementById("MAINBODYSTYLEOUT").className = 'SlideAnimationBODY';
+
+  setTimeout(function () {
+    document.getElementById("Navbi").style.bottom = "-30px";
+  }, 40);
 }
 
 function ClOSESettingsCheck() {
@@ -282,6 +286,9 @@ function ClOSESettingsCheck() {
     document.getElementById("MAINBODYSTYLEOUT").className = 'SlideAnimationBODYremove';
     // document.getElementById("CropSetting").style.marginTop = "0rem"
   }, 100);
+  setTimeout(function () {
+    document.getElementById("Navbi").style.bottom = "0px";
+  }, 160);
 }
 
 // Theme selecter on settings

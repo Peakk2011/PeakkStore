@@ -10,7 +10,7 @@
     height: 100vh;
     z-index: 16;
     position: fixed;
-    background-color: #060606;
+    background-color: currentColor;
 }
 
 .setting {
@@ -61,20 +61,20 @@
 .settingsContent-ButtonLoginCheck li a {
     color: #000;
     padding: 0.4rem 1rem;
-    background-color: #98AD95;
+    background-color: #fffbd1;
     border-radius: 3px;
     font-weight: 300;
     -webkit-text-stroke-width: 1.2px;
 }
 
 #OutlineTEXTSETTING {
-    background-color: transparent;
-    color: #98AD95;
+    background-color: #fffbd1;
+    color: #000;
 }
 
 #NotRecommendTEXTSETTING {
-    background-color: transparent;
-    color: #98AD95;
+    background-color: #fffbd1;
+    color: #000;
 }
 
 .settingsContent-ButtonLoginCheck {
@@ -87,11 +87,12 @@
     color: #fff;
     font-family: SFPRO;
     font-size: 24px;
+    margin-top: 1.2rem;
 }
 
 #SearchINPUTOnSet {
     border-radius: 4px 0 0 4px;
-    border: solid 1px #98AD95;
+    border: solid 1px var(--SecColor);
 }
 
 #SearchINPUTOnSet::placeholder {
@@ -99,8 +100,8 @@
 }
 
 #SearchBTNOnSet {
-    background-color: #98AD95;
-    border: solid 1px #98AD95;
+    background-color: var(--button);
+    border: solid 1px var(--button-color);
     border-radius: 0 4px 4px 0;
 }
 
@@ -110,7 +111,7 @@
 }
 
 .settings-content p {
-    color: #98AD95;
+    color: #fffbd1;
     margin: 1rem 0px;
     font-family: Segoe Ui Variable;
     font-weight: 300;
@@ -129,7 +130,7 @@
 
 #SettingsButtonCheck {
     padding: 0.5rem 1rem;
-    background-color: #98AD95;
+    background-color: #fffbd1;
     -webkit-text-stroke-width: 0.8px;
     border: none;
     border-radius: 3px;
