@@ -20,7 +20,7 @@
     background-color: var(--BackgroundProces);
     position: fixed;
     backdrop-filter: blur(20px);
-    bottom: -100%;
+    bottom: -120%;
 }
 
 .Menu-content {
