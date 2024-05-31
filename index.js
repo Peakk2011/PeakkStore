@@ -185,7 +185,7 @@ function MenuLinksSetup() {
 
 function MenuLinksCloseCheck() {
   document.getElementById("ToogleLinks").style.bottom = "-370px"
-  document.getElementById("MenuBlurToggleDirefent").style.bottom = "-100%"
+  document.getElementById("MenuBlurToggleDirefent").style.bottom = "-120%"
   document.getElementById('MainBottomNavbar').style.zIndex = "4";
 }
 
